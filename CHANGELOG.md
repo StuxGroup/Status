@@ -3,6 +3,12 @@
 All notable changes to Stux.Group's status page (status.stux.group) are documented here. It
 follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.1.0
+
+### Added
+
+- A **Current status** table in the README, kept up to date by GitHup's `readme` mode on every status page build: each service's status, 24 h / 7 d / 30 d uptime and 24 h response time, with a link to status.stux.group
+
 ## v1.0.0
 
 ### Added

@@ -11,6 +11,13 @@
 <!-- A live badge: reads the overall status straight from data/summary.json. -->
 [![Stux.Group status](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FStuxGroup%2FStatus%2Fmain%2Fdata%2Fsummary.json&query=%24.status&label=status&style=for-the-badge)](https://status.stux.group)
 
+## Current status
+
+Updated by GitHup whenever the status page is rebuilt (hourly, and when a status changes).
+
+<!-- githup:start -->
+<!-- githup:end -->
+
 ## What's monitored
 
 Every 5 minutes, GitHup checks each monitor in [`.githup.yml`](.githup.yml): Stux.Group,
@@ -31,6 +38,8 @@ To announce planned maintenance, open an Issue yourself with the `githup` and `i
 - **`site/`** holds what GitHup doesn't make: the **Boring Legal Stuff** hub at `/legal/` with
   its six sub-pages, and a `404.html`.
 - **`data/`** is the monitoring history. Don't edit it by hand.
+- **The status table above** is written by GitHup's `readme` mode between the
+  `<!-- githup:start -->` and `<!-- githup:end -->` markers. Don't edit inside them.
 
 ## Local development
 
