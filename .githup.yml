@@ -1,0 +1,52 @@
+# Stux.Group Status: https://status.stux.group
+# Checked every 5 minutes by .github/workflows/status.yml, using GitHup:
+# https://github.com/StuxGroup/GitHup
+site:
+  name: Stux.Group Status
+  description: Live status of Stux.Group's websites and services, checked every 5 minutes.
+  logo: https://global.media.stux.group/icon.png
+  favicon: https://global.media.stux.group/icon.png
+  accent: "#0f73ff"
+  legal: https://status.stux.group/legal/
+  footer_links:
+    - label: Stux.Group
+      url: https://stux.group/
+    - label: All services
+      url: https://services.stux.group/
+    - label: Report a problem
+      url: https://github.com/StuxGroup/Status/issues/new
+
+defaults:
+  timeout: 15
+  retries: 2
+  max_response_time: 3000
+
+monitors:
+  - name: Stux.Group
+    url: https://stux.group/
+    description: The Stux.Group website
+  - name: Stux.Group Services
+    url: https://services.stux.group/
+    description: The directory of Stux.Group services
+  - name: Stux.Group Media CDN
+    url: https://global.media.stux.group/icon.png
+    description: Shared logos and images used across every Stux.Group site
+  - name: Stux.Dev
+    url: https://stux.dev/
+  - name: Stuxedo
+    url: https://stuxedo.com/
+    description: Hosting and cloud services
+  - name: Stux.Music
+    url: https://stux.music/
+  - name: Ream.st
+    url: https://ream.st/
+  - name: Multi.st Twitch
+    url: https://twitch.multi.st/
+  - name: Multi.st YouTube
+    url: https://youtube.multi.st/
+  - name: GitHup
+    url: https://githup.stux.group/
+    description: The GitHup website and demo
+
+incidents:
+  labels: [status]

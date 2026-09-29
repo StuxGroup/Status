@@ -1,0 +1,64 @@
+<p align="center">
+  <img src="https://global.media.stux.group/logo.png" height="100" alt="Stux.Group Logo">
+</p>
+
+# Status
+
+### *Live status of Stux.Group's websites and services, powered by [GitHup](https://githup.stux.group).*
+
+**Status page:** [status.stux.group](https://status.stux.group)
+
+<!-- A live badge: reads the overall status straight from data/summary.json. -->
+[![Stux.Group status](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FStuxGroup%2FStatus%2Fmain%2Fdata%2Fsummary.json&query=%24.status&label=status&style=for-the-badge)](https://status.stux.group)
+
+## What's monitored
+
+Every 5 minutes, GitHup checks each monitor in [`.githup.yml`](.githup.yml): Stux.Group,
+Stux.Group Services, the Stux.Group media CDN, Stux.Dev, Stuxedo, Stux.Music, Ream.st,
+Multi.st Twitch, Multi.st YouTube and GitHup. To add a service, add a monitor there.
+
+When a service goes down, GitHup opens an Issue on this repository (labelled `githup`,
+`incident`, `status` and the monitor's slug) and closes it with the downtime when it recovers.
+To announce planned maintenance, open an Issue yourself with the `githup` and `incident` labels
+(plus the monitor's slug to link it); it shows on the status page.
+
+## How it works
+
+- **`.github/workflows/status.yml`** runs a GitHup `check` every 5 minutes and commits the
+  results to `data/` as `github-actions[bot]`. When a status changes, hourly, and on pushes, it
+  builds the GitHup status page into `_site` (with `site-dir`), copies `site/` on top and
+  deploys it with `actions/deploy-pages`.
+- **`site/`** holds what GitHup doesn't make: the **Boring Legal Stuff** hub at `/legal/` with
+  its six sub-pages, and a `404.html`.
+- **`data/`** is the monitoring history. Don't edit it by hand.
+
+## Local development
+
+```bash
+./dev-server.sh                 # or dev-server.bat on Windows; add a port as the last argument
+./dev-server.sh --no-dev-mode   # production rendering
+```
+
+`dev-server` generates 90 days of example data, builds the status page into `.dev/public` with
+`DEV_MODE` on, adds `site/` and serves it at `http://127.0.0.1:8000`. It uses GitHup from
+`$GITHUP_PATH`, a sibling `../GitHup` checkout, or a fresh clone in `.dev/GitHup`.
+
+## Hosting
+
+GitHub Pages, deployed by Actions (**Settings → Pages → Source: GitHub Actions**), with the custom
+domain `status.stux.group` set in the Pages settings. DNS: a `CNAME` record for `status` pointing
+at `stuxgroup.github.io`.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## License
+
+The code in this repository is MIT, copyright © Stux.Group, see [LICENSE](LICENSE). The
+Stux.Group name, logos and branding are not covered by the license.
+
+---
+
+*Built & maintained by <img src="https://github.com/StuxGroup.png" height="14" alt="Stux.Group" valign="middle"> [Stux.Group](https://github.com/StuxGroup), powered by [GitHup](https://githup.stux.group), a Stux.Group Service.  
+Stux.Group is the parent of the <img src="https://global.media.stux.group/icon.png" height="14" alt="Stux.Group" valign="middle"> Stux.Group Brand of Companies.*
