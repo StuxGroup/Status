@@ -22,16 +22,16 @@ Updated by GitHup whenever the status page is rebuilt (hourly, and when a status
 
 | Monitor | Status | Uptime (24 h) | Uptime (7 d) | Uptime (30 d) | Response time (24 h) |
 | ------- | ------ | ------------- | ------------ | ------------- | -------------------- |
-| [Stux.Group](https://stux.group/) | Up | 100.00% | 100.00% | 100.00% | 408 ms |
-| [Stux.Group Services](https://services.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 445 ms |
-| [Stux.Group Media CDN](https://global.media.stux.group/icon.png) | Up | 100.00% | 100.00% | 100.00% | 712 ms |
-| [Stux.Dev](https://stux.dev/) | Up | 100.00% | 100.00% | 100.00% | 478 ms |
-| [Stuxedo](https://stuxedo.com/) | Up | 100.00% | 100.00% | 100.00% | 723 ms |
-| [Stux.Music](https://stux.music/) | Up | 100.00% | 100.00% | 100.00% | 634 ms |
-| [Ream.st](https://ream.st/) | Up | 100.00% | 100.00% | 100.00% | 475 ms |
-| [Multi.st Twitch](https://twitch.multi.st/) | Up | 100.00% | 100.00% | 100.00% | 1130 ms |
-| [Multi.st YouTube](https://youtube.multi.st/) | Up | 100.00% | 100.00% | 100.00% | 1052 ms |
-| [GitHup](https://githup.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 245 ms |
+| [Stux.Group](https://stux.group/) | Up | 100.00% | 100.00% | 100.00% | 696 ms |
+| [Stux.Group Services](https://services.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 579 ms |
+| [Stux.Group Media CDN](https://global.media.stux.group/icon.png) | Up | 100.00% | 100.00% | 100.00% | 514 ms |
+| [Stux.Dev](https://stux.dev/) | Up | 100.00% | 100.00% | 100.00% | 628 ms |
+| [Stuxedo](https://stuxedo.com/) | Up | 100.00% | 100.00% | 100.00% | 664 ms |
+| [Stux.Music](https://stux.music/) | Up | 100.00% | 100.00% | 100.00% | 872 ms |
+| [Ream.st](https://ream.st/) | Up | 100.00% | 100.00% | 100.00% | 602 ms |
+| [Multi.st Twitch](https://twitch.multi.st/) | Up | 100.00% | 100.00% | 100.00% | 956 ms |
+| [Multi.st YouTube](https://youtube.multi.st/) | Up | 100.00% | 100.00% | 100.00% | 1006 ms |
+| [GitHup](https://githup.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 440 ms |
 <!-- githup:end -->
 
 ## What's monitored
