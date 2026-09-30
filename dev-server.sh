@@ -9,10 +9,10 @@
 # /changelogs pages and 404) plus CHANGELOG.md and VERSION.md on top and serves it all with python -m http.server, just like
 # https://status.stux.group.
 #
-# GitHup itself is found at $GITHUP_PATH, else ../GitHup (a sibling checkout),
+# GitHup itself is found at $GITHUP_PATH, else ../GitHup or ../../Stux.Group/GitHup (a local checkout),
 # else it is cloned into .dev/GitHup.
 # DEV_MODE is on by default: the status page shows GitHup's DEV MODE banner and
-# the /legal pages show their own on localhost (?nodev=1 hides theirs).
+# the hand-made pages (/legal, /changelogs) show the shared dev banner too.
 set -e
 
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -34,6 +34,8 @@ GITHUP="${GITHUP_PATH:-}"
 if [ -z "$GITHUP" ]; then
     if [ -f "$DIR/../GitHup/githup/__init__.py" ]; then
         GITHUP="$DIR/../GitHup"
+    elif [ -f "$DIR/../../Stux.Group/GitHup/githup/__init__.py" ]; then
+        GITHUP="$DIR/../../Stux.Group/GitHup"
     else
         GITHUP="$DIR/.dev/GitHup"
         [ -d "$GITHUP" ] || git clone --depth 1 https://github.com/StuxGroup/GitHup.git "$GITHUP"
@@ -47,9 +49,15 @@ export PYTHONPATH="$GITHUP" PYTHONDONTWRITEBYTECODE=1
     --incidents-file .dev/data/incidents.json --out .dev/public --no-deploy
 cp -r site/. CHANGELOG.md VERSION.md .dev/public/
 
+# The hand-made pages (site/) show the shared dev banner when assets/dev-mode.js says so; the
+# committed copy says false, so only this local build gets true.
+if [ "$DEV_MODE" = "1" ]; then
+    echo "window.DEV_MODE = true;" > ".dev/public/assets/dev-mode.js"
+fi
+
 if [ "$DEV_MODE" = "1" ]; then
     echo "Stux.Group Status (DEV_MODE=1) at http://127.0.0.1:$PORT/"
 else
-    echo "Stux.Group Status (production rendering) at http://127.0.0.1:$PORT/  (add ?nodev=1 on /legal pages)"
+    echo "Stux.Group Status (production rendering) at http://127.0.0.1:$PORT/"
 fi
 "$PY" -m http.server "$PORT" --bind 127.0.0.1 --directory .dev/public

@@ -10,10 +10,10 @@ REM the GitHup status page into .dev\public, copies site\ (the /legal and
 REM /changelogs pages and 404) plus CHANGELOG.md and VERSION.md on top and serves it all with python -m http.server, just like
 REM https://status.stux.group.
 REM
-REM GitHup itself is found at %GITHUP_PATH%, else ..\GitHup (a sibling checkout),
+REM GitHup itself is found at %GITHUP_PATH%, else ..\GitHup or ..\..\Stux.Group\GitHup (a local checkout),
 REM else it is cloned into .dev\GitHup.
 REM DEV_MODE is on by default: the status page shows GitHup's DEV MODE banner and
-REM the /legal pages show their own on localhost (?nodev=1 hides theirs).
+REM the hand-made pages (/legal, /changelogs) show the shared dev banner too.
 
 set "DIR=%~dp0"
 set "PORT=8000"
@@ -37,6 +37,10 @@ if exist "%DIR%..\GitHup\githup\__init__.py" (
     set "GITHUP=%DIR%..\GitHup"
     goto found
 )
+if exist "%DIR%..\..\Stux.Group\GitHup\githup\__init__.py" (
+    set "GITHUP=%DIR%..\..\Stux.Group\GitHup"
+    goto found
+)
 set "GITHUP=%DIR%.dev\GitHup"
 if not exist "%GITHUP%" git clone --depth 1 https://github.com/StuxGroup/GitHup.git "%GITHUP%" || exit /b 1
 
@@ -50,10 +54,13 @@ python -m githup site --config .githup.yml --data-dir .dev/data --incidents-file
 xcopy site .dev\public\ /e /i /q /y >nul || exit /b 1
 copy /y CHANGELOG.md .dev\public\ >nul || exit /b 1
 copy /y VERSION.md .dev\public\ >nul || exit /b 1
+REM The hand-made pages (site\) show the shared dev banner when assets\dev-mode.js says so; the
+REM committed copy says false, so only this local build gets true.
+if "%DEV_MODE%"=="1" (echo window.DEV_MODE = true;) > ".dev\public\assets\dev-mode.js"
 
 if "%DEV_MODE%"=="1" (
     echo Stux.Group Status ^(DEV_MODE=1^) at http://127.0.0.1:%PORT%/
 ) else (
-    echo Stux.Group Status ^(production rendering^) at http://127.0.0.1:%PORT%/  ^(add ?nodev=1 on /legal pages^)
+    echo Stux.Group Status ^(production rendering^) at http://127.0.0.1:%PORT%/
 )
 python -m http.server %PORT% --bind 127.0.0.1 --directory .dev/public
