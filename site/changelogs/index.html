@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Changelogs · Stux.Group Status</title>
+<meta name="description" content="Release history for status.stux.group and GitHup, the action that runs it.">
+<link rel="icon" href="https://global.media.stux.group/icon.png">
+<link rel="canonical" href="https://status.stux.group/changelogs/">
+<link rel="stylesheet" href="/assets/pages.css">
+<script src="/assets/pages.js"></script>
+<script src="/assets/changelogs.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="dev-banner" id="dev-banner" role="note">DEV MODE: local preview. Add <code>?nodev=1</code> to hide this banner.</div>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="https://global.media.stux.group/icon.png" alt=""><span>Stux.Group Status</span></a>
+    <nav aria-label="Main"><a href="/">Status</a><a href="https://stux.group/">Stux.Group</a></nav>
+  </div>
+</header>
+<main id="main">
+  <div class="wrap">
+    <p class="crumbs"><a href="/">Status</a> / Changelogs</p>
+    <h1>Changelogs</h1>
+    <p class="sub">What's changed, release by release.</p>
+    <div class="cl-tabs" role="tablist" aria-label="Changelogs">
+      <button type="button" class="cl-tab" role="tab" id="tab-status" data-key="status" aria-controls="cl-status" aria-selected="true"><img src="https://global.media.stux.group/icon.png" alt="">Status page<span class="cl-tab-version" data-version-of="cl-status"></span></button>
+      <button type="button" class="cl-tab" role="tab" id="tab-githup" data-key="githup" aria-controls="cl-githup" aria-selected="false" tabindex="-1"><img src="https://githup.stux.group/assets/icon.svg" alt="">GitHup<span class="cl-tab-version" data-version-of="cl-githup"></span></button>
+    </div>
+    <section class="cl-panel" id="cl-status" role="tabpanel" aria-labelledby="tab-status" tabindex="0"
+             data-src="/CHANGELOG.md" data-fallback="https://github.com/StuxGroup/Status/blob/main/CHANGELOG.md">
+      <p class="cl-intro">Changes to status.stux.group itself: which services it watches, its pages and its setup.</p>
+      <div class="cl-body"><p class="cl-p">Loading the changelog&hellip;</p></div>
+    </section>
+    <section class="cl-panel" id="cl-githup" role="tabpanel" aria-labelledby="tab-githup" tabindex="0" hidden
+             data-src="https://raw.githubusercontent.com/StuxGroup/GitHup/v1/CHANGELOG.md" data-fallback="https://github.com/StuxGroup/GitHup/blob/main/CHANGELOG.md">
+      <p class="cl-intro">Changes to <a href="https://githup.stux.group">GitHup</a>, the GitHub Action that checks these services and builds this status page. Shown for <code>v1</code>, the release this page runs on.</p>
+      <div class="cl-body"><p class="cl-p">Loading the changelog&hellip;</p></div>
+    </section>
+    <noscript><p class="cl-p">The changelogs need JavaScript. Read them on GitHub: <a href="https://github.com/StuxGroup/Status/blob/main/CHANGELOG.md">Status page</a> and <a href="https://github.com/StuxGroup/GitHup/blob/main/CHANGELOG.md">GitHup</a>.</p></noscript>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <nav aria-label="Footer">
+      <a href="/changelogs/" data-version>Changelogs</a>
+      <a href="/">Status</a>
+      <a href="https://github.com/StuxGroup/Status/issues/new">Report a problem</a>
+      <a href="/legal/">Boring Legal Stuff</a>
+    </nav>
+    <div class="footer-powered">
+      <a href="https://githup.stux.group" class="footer-powered-item">Powered by GitHup</a>
+      <span class="footer-powered-sep" aria-hidden="true">|</span>
+      <a href="https://services.stux.group" class="footer-powered-item">A Stux.Group Service</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

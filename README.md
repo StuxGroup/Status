@@ -36,9 +36,14 @@ Updated by GitHup whenever the status page is rebuilt (hourly, and when a status
 
 ## What's monitored
 
-Every 5 minutes, GitHup checks each monitor in [`.githup.yml`](.githup.yml): Stux.Group,
-Stux.Group Services, the Stux.Group media CDN, Stux.Dev, Stuxedo, Stux.Music, Ream.st,
-Multi.st Twitch, Multi.st YouTube and GitHup. To add a service, add a monitor there.
+Every 5 minutes, GitHup checks each monitor in [`.githup.yml`](.githup.yml), shown on the page
+in three groups:
+
+- **Stux.Group:** Stux.Group, Stux.Group Services and the Stux.Group media CDN
+- **Brands:** Stux.Dev, Stuxedo, Stux.Music and GitHup
+- **Streaming:** Ream.st, Multi.st Twitch and Multi.st YouTube
+
+To add a service, add a monitor to the right group there (or a new group).
 
 When a service goes down, GitHup opens an Issue on this repository (labelled `githup`,
 `incident`, `status` and the monitor's slug) and closes it with the downtime when it recovers.
@@ -49,10 +54,13 @@ To announce planned maintenance, open an Issue yourself with the `githup` and `i
 
 - **`.github/workflows/status.yml`** runs a GitHup `check` every 5 minutes and commits the
   results to `data/` as `github-actions[bot]`. When a status changes, hourly, and on pushes, it
-  builds the GitHup status page into `_site` (with `site-dir`), copies `site/` on top and
-  deploys it with `actions/deploy-pages`.
+  builds the GitHup status page into `_site` (with `site-dir`), copies `site/`, `CHANGELOG.md`
+  and `VERSION.md` on top and deploys it with `actions/deploy-pages`.
 - **`site/`** holds what GitHup doesn't make: the **Boring Legal Stuff** hub at `/legal/` with
-  its six sub-pages, and a `404.html`.
+  its six sub-pages, the [changelogs](https://status.stux.group/changelogs/) page at
+  `/changelogs/` (this repo's `CHANGELOG.md` and GitHup's, in tabs; `/changelog/` redirects
+  there), and a `404.html`. Every page's footer starts with this repo's version, linking to
+  the changelogs.
 - **`data/`** is the monitoring history. Don't edit it by hand.
 - **The status table above** is written by GitHup's `readme` mode between the
   `<!-- githup:start -->` and `<!-- githup:end -->` markers. Don't edit inside them.
@@ -65,7 +73,7 @@ To announce planned maintenance, open an Issue yourself with the `githup` and `i
 ```
 
 `dev-server` generates 90 days of example data, builds the status page into `.dev/public` with
-`DEV_MODE` on, adds `site/` and serves it at `http://127.0.0.1:8000`. It uses GitHup from
+`DEV_MODE` on, adds `site/`, `CHANGELOG.md` and `VERSION.md` and serves it at `http://127.0.0.1:8000`. It uses GitHup from
 `$GITHUP_PATH`, a sibling `../GitHup` checkout, or a fresh clone in `.dev/GitHup`.
 
 ## Hosting

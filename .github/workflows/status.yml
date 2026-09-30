@@ -13,6 +13,8 @@ on:
     paths:
       - site/**
       - .githup.yml
+      - CHANGELOG.md
+      - VERSION.md
       - .github/workflows/status.yml
 
 permissions:
@@ -66,6 +68,7 @@ jobs:
         uses: StuxGroup/GitHup@v1
         with:
           mode: readme
+          site-url: https://status.stux.group/
       # GitHup empties site-dir before building, so the status page goes in first.
       - name: Build the status page
         uses: StuxGroup/GitHup@v1
@@ -73,8 +76,8 @@ jobs:
           mode: site
           deploy: "false"
           site-dir: _site
-      - name: Add /legal and the 404 page
-        run: cp -r site/. _site/
+      - name: Add /legal, /changelogs, the 404 page and the changelog files
+        run: cp -r site/. CHANGELOG.md VERSION.md _site/
       - uses: actions/upload-pages-artifact@v5
         with:
           path: _site

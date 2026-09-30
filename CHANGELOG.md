@@ -3,6 +3,28 @@
 All notable changes to Stux.Group's status page (status.stux.group) are documented here. It
 follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.2.0
+
+### Added
+
+- A **Changelogs** page at `/changelogs/` with two tabs: this status page's own changelog (with its version) and GitHup's (read live from its `v1` release), with each release's sections sorted into a fixed order and coloured type badges; `/changelogs/#githup` opens the GitHup tab, and `/changelog/` redirects to `/changelogs/`, keeping the `#tab`
+- `CHANGELOG.md` and `VERSION.md` are now published with the site (the workflow and both dev servers copy them in), and pushes that change them rebuild the page
+
+### Changed
+
+- Monitors are grouped on the status page and in the README table, using GitHup v1.4.0's `groups`: **Stux.Group** (Stux.Group, Stux.Group Services, the media CDN), **Brands** (Stux.Dev, Stuxedo, Stux.Music, GitHup) and **Streaming** (Ream.st, Multi.st Twitch, Multi.st YouTube); slugs are unchanged, so every monitor keeps its history
+- The status page footer now shows the GitHup version that built it (from GitHup v1.4.0)
+- The status page footer's first link is now this page's version (`v1.2.0`), linking to `/changelogs/` (GitHup v1.4.0's `site.changelog`), replacing the **Stux.Group** link
+- The `/legal` and 404 pages' footers match the status page: the version link to `/changelogs/`, Status, Report a problem and Boring Legal Stuff, then **Powered by GitHup | A Stux.Group Service** in place of the Stux.Group logo
+
+### Fixed
+
+- The README table's "Live status page" link pointed at `https://stuxgroup.github.io/Status/`; the workflow now passes GitHup's new `site-url` input so it links to `https://status.stux.group/`
+
+### Removed
+
+- The **All services** footer link, from the status page and the static pages; the footer's **A Stux.Group Service** link already goes there
+
 ## v1.1.0
 
 ### Added
