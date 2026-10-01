@@ -32,6 +32,9 @@ Updated by GitHup whenever the status page is rebuilt (hourly, and when a status
 | Streaming | [Ream.st](https://ream.st/) | Up | 42.85% | 57.89% | 57.89% | 1050 ms |
 | Streaming | [Multi.st Twitch](https://twitch.multi.st/) | Up | 100.00% | 100.00% | 100.00% | 768 ms |
 | Streaming | [Multi.st YouTube](https://youtube.multi.st/) | Up | 100.00% | 100.00% | 100.00% | 720 ms |
+| StuxAPIs | [SeasonalOverlaysLibrary](https://seasonaloverlayslibrary.stuxapis.net/) | No data | n/a | n/a | n/a | n/a |
+| StuxAPIs | [Kittens](https://kittens.stuxapis.net/) | No data | n/a | n/a | n/a | n/a |
+| StuxAPIs | [SecretGen](https://secretgen.stuxapis.net/) | No data | n/a | n/a | n/a | n/a |
 <!-- githup:end -->
 
 ## What's monitored
