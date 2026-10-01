@@ -7,12 +7,17 @@ site:
   logo: https://global.media.stux.group/icon.png
   favicon: https://global.media.stux.group/icon.png
   accent: "#0f73ff"
-  legal: https://status.stux.group/legal/
-  # The footer's first link: this repo's version (from VERSION.md), pointing at the changelogs.
-  changelog: https://status.stux.group/changelogs/
+  url: https://status.stux.group/
   footer_links:
     - label: Report a problem
       url: https://github.com/StuxGroup/Status/issues/new
+
+legal:
+  operator: Stux.Group
+  company: "Stux.Group is the trading name of Stux Group Ltd, a company registered in England and Wales (company no. 13160574), registered office 82a James Carter Road, Mildenhall, England, IP28 7DE."
+  contact: legal@stux.group
+  host: GitHub Pages
+  effective: 29 September 2026
 
 defaults:
   timeout: 15

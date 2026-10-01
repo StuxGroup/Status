@@ -5,14 +5,13 @@
 #   --no-dev-mode   render the status page exactly as production would
 #
 # Generates 90 days of example data for the monitors in .githup.yml, builds
-# the GitHup status page into .dev/public, copies site/ (the /legal and
-# /changelogs pages and 404) plus CHANGELOG.md and VERSION.md on top and serves it all with python -m http.server, just like
+# the GitHup status page into .dev/public, with its legal pages, 404 and sitemap,
+# and serves it with python -m http.server, just like
 # https://status.stux.group.
 #
 # GitHup itself is found at $GITHUP_PATH, else ../GitHup or ../../Stux.Group/GitHup (a local checkout),
 # else it is cloned into .dev/GitHup.
-# DEV_MODE is on by default: the status page shows GitHup's DEV MODE banner and
-# the hand-made pages (/legal, /changelogs) show the shared dev banner too.
+# the status page, its legal pages and 404 show GitHup's DEV MODE banner.
 set -e
 
 DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -47,13 +46,6 @@ export PYTHONPATH="$GITHUP" PYTHONDONTWRITEBYTECODE=1
 "$PY" -m githup demo --config .githup.yml --data-dir .dev/data
 "$PY" -m githup site --config .githup.yml --data-dir .dev/data \
     --incidents-file .dev/data/incidents.json --out .dev/public --no-deploy
-cp -r site/. CHANGELOG.md VERSION.md .dev/public/
-
-# The hand-made pages (site/) show the shared dev banner when assets/dev-mode.js says so; the
-# committed copy says false, so only this local build gets true.
-if [ "$DEV_MODE" = "1" ]; then
-    echo "window.DEV_MODE = true;" > ".dev/public/assets/dev-mode.js"
-fi
 
 if [ "$DEV_MODE" = "1" ]; then
     echo "Stux.Group Status (DEV_MODE=1) at http://127.0.0.1:$PORT/"

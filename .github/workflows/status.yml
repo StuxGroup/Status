@@ -1,5 +1,5 @@
 # Checks Stux.Group's services with GitHup, then builds status.stux.group
-# (the GitHup status page, plus site/ for /legal and the 404 page) and
+# (the GitHup status page with its legal pages, sitemap and 404 page) and
 # deploys it to GitHub Pages.
 name: Status
 
@@ -11,10 +11,7 @@ on:
   push:
     branches: [main]
     paths:
-      - site/**
       - .githup.yml
-      - CHANGELOG.md
-      - VERSION.md
       - .github/workflows/status.yml
 
 permissions:
@@ -76,8 +73,6 @@ jobs:
           mode: site
           deploy: "false"
           site-dir: _site
-      - name: Add /legal, /changelogs, the 404 page and the changelog files
-        run: cp -r site/. CHANGELOG.md VERSION.md _site/
       - uses: actions/upload-pages-artifact@v5
         with:
           path: _site

@@ -54,13 +54,13 @@ To announce planned maintenance, open an Issue yourself with the `githup` and `i
 
 - **`.github/workflows/status.yml`** runs a GitHup `check` every 5 minutes and commits the
   results to `data/` as `github-actions[bot]`. When a status changes, hourly, and on pushes, it
-  builds the GitHup status page into `_site` (with `site-dir`), copies `site/`, `CHANGELOG.md`
-  and `VERSION.md` on top and deploys it with `actions/deploy-pages`.
-- **`site/`** holds what GitHup doesn't make: the **Boring Legal Stuff** hub at `/legal/` with
-  its six sub-pages, the [changelogs](https://status.stux.group/changelogs/) page at
-  `/changelogs/` (this repo's `CHANGELOG.md` and GitHup's, in tabs; `/changelog/` redirects
-  there), and a `404.html`. Every page's footer starts with this repo's version, linking to
-  the changelogs.
+  builds the GitHup status page into `_site` (with `site-dir`), and deploys it with `actions/deploy-pages`.
+- **`legal:` in `.githup.yml`** (operator, company, contact, host, effective date) makes GitHup
+  generate the **Boring Legal Stuff** hub at `/legal/` with its six sub-pages, a themed `404.html`, a
+  `/sitemap/` page, `sitemap.xml` and `robots.txt` (the base URL is `site.url`). Nothing is hand-made: the
+  footer shows only **Powered by GitHup vX.Y.Z**, linking to
+  [GitHup's changelog](https://githup.stux.group/changelogs/#githup), so GitHup's is the one version and
+  changelog on the page. This repo's own `CHANGELOG.md` and `VERSION.md` are for this repo only.
 - **`data/`** is the monitoring history. Don't edit it by hand.
 - **The status table above** is written by GitHup's `readme` mode between the
   `<!-- githup:start -->` and `<!-- githup:end -->` markers. Don't edit inside them.
@@ -73,7 +73,7 @@ To announce planned maintenance, open an Issue yourself with the `githup` and `i
 ```
 
 `dev-server` generates 90 days of example data, builds the status page into `.dev/public` with
-`DEV_MODE` on, adds `site/`, `CHANGELOG.md` and `VERSION.md` and serves it at `http://127.0.0.1:8000`. It uses GitHup from
+`DEV_MODE` on, with its legal pages, 404 and sitemap, and serves it at `http://127.0.0.1:8000`. It uses GitHup from
 `$GITHUP_PATH`, a sibling `../GitHup` checkout, or a fresh clone in `.dev/GitHup`.
 
 ## Hosting

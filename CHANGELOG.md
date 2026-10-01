@@ -3,6 +3,23 @@
 All notable changes to Stux.Group's status page (status.stux.group) are documented here. It
 follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.4.0
+
+### Added
+
+- A `legal:` block in `.githup.yml` (operator, company, contact, host, effective date): GitHup generates the **Boring Legal Stuff** hub at `/legal/` and its six sub-pages, a themed 404 page, `sitemap.xml`, `robots.txt` and `/sitemap/`, all in the status page's own template (needs GitHup v1.6.0, picked up through `StuxGroup/GitHup@v1`)
+- The sitemap's base URL comes from `site.url: https://status.stux.group/`
+
+### Changed
+
+- The status page comes entirely from GitHup's template, with one version and one changelog: the footer shows only **Powered by GitHup vX.Y.Z**, linking to GitHup's changelog
+- `dev-server.sh`/`.bat` and the workflow no longer copy `site/`, `CHANGELOG.md` or `VERSION.md` into the page; the dev server still builds with the local GitHup checkout, so the new pages show locally
+
+### Removed
+
+- The hand-made `site/` folder: the legal hub and sub-pages, the `/changelogs/` page (and `/changelog/` redirect), the 404 page and their shared assets. This repo keeps its own `CHANGELOG.md`, `VERSION.md` and tags
+- `site.changelog` (and `site.legal`) from `.githup.yml`; `site.changelog` is deprecated in GitHup v1.6.0
+
 ## v1.3.0
 
 ### Added
