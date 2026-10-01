@@ -3,6 +3,13 @@
 All notable changes to Stux.Group's status page (status.stux.group) are documented here. It
 follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+
+## v1.4.2
+
+### Removed
+
+- The copyright line in the status page footer: `site.copyright` is no longer set, as status pages don't need one
+
 ## v1.4.1
 
 ### Added
