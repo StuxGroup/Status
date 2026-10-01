@@ -18,20 +18,20 @@ Updated by GitHup whenever the status page is rebuilt (hourly, and when a status
 <!-- githup:start -->
 <!-- This table is written by GitHup (https://github.com/StuxGroup/GitHup); edits here are overwritten. -->
 
-**Partial outage** · [Live status page](https://status.stux.group/)
+**All systems operational** · [Live status page](https://status.stux.group/)
 
 | Group | Monitor | Status | Uptime (24 h) | Uptime (7 d) | Uptime (30 d) | Response time (24 h) |
 | ----- | ------- | ------ | ------------- | ------------ | ------------- | -------------------- |
-| Stux.Group | [Stux.Group](https://stux.group/) | Up | 100.00% | 100.00% | 100.00% | 510 ms |
-| Stux.Group | [Stux.Group Services](https://services.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 353 ms |
-| Stux.Group | [Stux.Group Media CDN](https://global.media.stux.group/icon.png) | Up | 100.00% | 100.00% | 100.00% | 615 ms |
-| Brands | [Stux.Dev](https://stux.dev/) | Up | 100.00% | 100.00% | 100.00% | 643 ms |
-| Brands | [Stuxedo](https://stuxedo.com/) | Up | 100.00% | 100.00% | 100.00% | 591 ms |
-| Brands | [Stux.Music](https://stux.music/) | Up | 100.00% | 100.00% | 100.00% | 1461 ms |
-| Brands | [GitHup](https://githup.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 312 ms |
-| Streaming | [Ream.st](https://ream.st/) | **Down** | 11.11% | 42.85% | 42.85% | 696 ms |
-| Streaming | [Multi.st Twitch](https://twitch.multi.st/) | Up | 100.00% | 100.00% | 100.00% | 709 ms |
-| Streaming | [Multi.st YouTube](https://youtube.multi.st/) | Up | 100.00% | 100.00% | 100.00% | 686 ms |
+| Stux.Group | [Stux.Group](https://stux.group/) | Up | 100.00% | 100.00% | 100.00% | 502 ms |
+| Stux.Group | [Stux.Group Services](https://services.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 361 ms |
+| Stux.Group | [Stux.Group Media CDN](https://global.media.stux.group/icon.png) | Up | 100.00% | 100.00% | 100.00% | 668 ms |
+| Brands | [Stux.Dev](https://stux.dev/) | Up | 100.00% | 100.00% | 100.00% | 622 ms |
+| Brands | [Stuxedo](https://stuxedo.com/) | Up | 100.00% | 100.00% | 100.00% | 588 ms |
+| Brands | [Stux.Music](https://stux.music/) | Up | 100.00% | 100.00% | 100.00% | 1390 ms |
+| Brands | [GitHup](https://githup.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 320 ms |
+| Streaming | [Ream.st](https://ream.st/) | Up | 20.00% | 46.66% | 46.66% | 862 ms |
+| Streaming | [Multi.st Twitch](https://twitch.multi.st/) | Up | 100.00% | 100.00% | 100.00% | 700 ms |
+| Streaming | [Multi.st YouTube](https://youtube.multi.st/) | Up | 100.00% | 100.00% | 100.00% | 678 ms |
 <!-- githup:end -->
 
 ## What's monitored
