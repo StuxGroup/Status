@@ -64,15 +64,5 @@ groups:
       - name: Multi.st YouTube
         url: https://youtube.multi.st/
 
-  - name: StuxAPIs
-    description: The StuxAPIs services and libraries. Lunar Calendar is not listed because its site does not serve yet.
-    monitors:
-      - name: SeasonalOverlaysLibrary
-        url: https://seasonaloverlayslibrary.stuxapis.net/
-      - name: Kittens
-        url: https://kittens.stuxapis.net/
-      - name: SecretGen
-        url: https://secretgen.stuxapis.net/
-
 incidents:
   labels: [status]

@@ -3,6 +3,12 @@
 All notable changes to Stux.Group's status page (status.stux.group) are documented here. It
 follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.4.6
+
+### Removed
+
+- The StuxAPIs group (SeasonalOverlaysLibrary, Kittens and SecretGen): moved to status.stuxapis.net
+
 ## v1.4.5
 
 ### Added
