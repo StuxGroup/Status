@@ -22,7 +22,7 @@ legal:
 defaults:
   timeout: 15
   retries: 2
-  max_response_time: 3000
+  max_response_time: 15000  # ms; GitHup's default. Slower (but otherwise good) answers show as degraded
 
 # Monitors are grouped into sections on the page, each with a combined status.
 # Slugs come from the names, so moving a monitor between groups keeps its history.
