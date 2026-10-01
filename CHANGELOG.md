@@ -3,6 +3,12 @@
 All notable changes to Stux.Group's status page (status.stux.group) are documented here. It
 follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.4.7
+
+### Added
+
+- A Stux.Cloud monitor (stux.cloud) in the Brands group, so its card on services.stux.group can show a live badge
+
 ## v1.4.6
 
 ### Removed
