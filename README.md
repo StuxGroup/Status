@@ -27,6 +27,7 @@ Updated by GitHup whenever the status page is rebuilt (hourly, and when a status
 | Stux.Group | [Stux.Group Media CDN](https://global.media.stux.group/icon.png) | Up | 100.00% | 100.00% | 100.00% | 534 ms |
 | Brands | [Stux.Dev](https://stux.dev/) | Up | 100.00% | 100.00% | 100.00% | 584 ms |
 | Brands | [Stuxedo](https://stuxedo.com/) | Up | 100.00% | 100.00% | 100.00% | 563 ms |
+| Brands | [Stux.Cloud](https://stux.cloud/) | No data | n/a | n/a | n/a | n/a |
 | Brands | [Stux.Music](https://stux.music/) | Up | 100.00% | 100.00% | 100.00% | 1605 ms |
 | Brands | [GitHup](https://githup.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 277 ms |
 | Streaming | [Ream.st](https://ream.st/) | Up | 52.94% | 65.21% | 65.21% | 1369 ms |
