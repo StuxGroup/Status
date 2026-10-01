@@ -22,17 +22,17 @@ Updated by GitHup whenever the status page is rebuilt (hourly, and when a status
 
 | Group | Monitor | Status | Uptime (24 h) | Uptime (7 d) | Uptime (30 d) | Response time (24 h) |
 | ----- | ------- | ------ | ------------- | ------------ | ------------- | -------------------- |
-| Stux.Group | [Stux.Group](https://stux.group/) | Up | 100.00% | 100.00% | 100.00% | 436 ms |
-| Stux.Group | [Stux.Group Services](https://services.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 347 ms |
-| Stux.Group | [Stux.Group Media CDN](https://global.media.stux.group/icon.png) | Up | 100.00% | 100.00% | 100.00% | 534 ms |
-| Brands | [Stux.Dev](https://stux.dev/) | Up | 100.00% | 100.00% | 100.00% | 584 ms |
-| Brands | [Stuxedo](https://stuxedo.com/) | Up | 100.00% | 100.00% | 100.00% | 563 ms |
-| Brands | [Stux.Cloud](https://stux.cloud/) | No data | n/a | n/a | n/a | n/a |
-| Brands | [Stux.Music](https://stux.music/) | Up | 100.00% | 100.00% | 100.00% | 1605 ms |
-| Brands | [GitHup](https://githup.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 277 ms |
-| Streaming | [Ream.st](https://ream.st/) | Up | 52.94% | 65.21% | 65.21% | 1369 ms |
-| Streaming | [Multi.st Twitch](https://twitch.multi.st/) | Up | 100.00% | 100.00% | 100.00% | 729 ms |
-| Streaming | [Multi.st YouTube](https://youtube.multi.st/) | Up | 100.00% | 100.00% | 100.00% | 697 ms |
+| Stux.Group | [Stux.Group](https://stux.group/) | Up | 100.00% | 100.00% | 100.00% | 448 ms |
+| Stux.Group | [Stux.Group Services](https://services.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 323 ms |
+| Stux.Group | [Stux.Group Media CDN](https://global.media.stux.group/icon.png) | Up | 100.00% | 100.00% | 100.00% | 517 ms |
+| Brands | [Stux.Dev](https://stux.dev/) | Up | 100.00% | 100.00% | 100.00% | 590 ms |
+| Brands | [Stuxedo](https://stuxedo.com/) | Up | 100.00% | 100.00% | 100.00% | 567 ms |
+| Brands | [Stux.Cloud](https://stux.cloud/) | Up | 100.00% | 100.00% | 100.00% | 408 ms |
+| Brands | [Stux.Music](https://stux.music/) | Up | 100.00% | 100.00% | 100.00% | 1657 ms |
+| Brands | [Ream.st](https://ream.st/) | Up | 61.90% | 70.37% | 70.37% | 1507 ms |
+| Services & tools | [GitHup](https://githup.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 269 ms |
+| Services & tools | [Multi.st Twitch](https://twitch.multi.st/) | Up | 100.00% | 100.00% | 100.00% | 757 ms |
+| Services & tools | [Multi.st YouTube](https://youtube.multi.st/) | Up | 100.00% | 100.00% | 100.00% | 711 ms |
 <!-- githup:end -->
 
 ## What's monitored
