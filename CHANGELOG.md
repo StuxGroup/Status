@@ -3,6 +3,12 @@
 All notable changes to Stux.Group's status page (status.stux.group) are documented here. It
 follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.4.8
+
+### Changed
+
+- GitHup moved from the Brands group to a new Services group, since it is a service, not a brand (its history is kept)
+
 ## v1.4.7
 
 ### Added

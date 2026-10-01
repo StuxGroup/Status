@@ -41,7 +41,7 @@ groups:
         description: Shared logos and images used across every Stux.Group site
 
   - name: Brands
-    description: Stux.Group's companies and products.
+    description: Stux.Group's companies.
     monitors:
       - name: Stux.Dev
         url: https://stux.dev/
@@ -53,6 +53,10 @@ groups:
         description: The cloud and infrastructure brand behind Stuxedo
       - name: Stux.Music
         url: https://stux.music/
+
+  - name: Services
+    description: Services run by Stux.Group.
+    monitors:
       - name: GitHup
         url: https://githup.stux.group/
         description: The GitHup website and demo
