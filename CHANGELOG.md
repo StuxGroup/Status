@@ -3,6 +3,16 @@
 All notable changes to Stux.Group's status page (status.stux.group) are documented here. It
 follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.5.0
+
+### Added
+
+- A Ream.st Status link in the Elsewhere section
+
+### Removed
+
+- The Ream.st, Multi.st Twitch and Multi.st YouTube monitors: moved to Ream.st's own status page, status.ream.st
+
 ## v1.4.9
 
 ### Added

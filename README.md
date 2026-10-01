@@ -41,9 +41,9 @@ Every 5 minutes (when GitHub runs the schedule late, a run checks up to 4 times,
 in four groups (the last is links only):
 
 - **Stux.Group:** Stux.Group, Stux.Group Services and the Stux.Group media CDN
-- **Brands:** Stux.Dev, Stuxedo, Stux.Cloud, Stux.Music and Ream.st
-- **Services & tools:** GitHup, Multi.st Twitch and Multi.st YouTube
-- **Elsewhere:** links to Stux.Dev, StuxAPIs and Stux.Music Status, which check those brands' own services
+- **Brands:** Stux.Dev, Stuxedo, Stux.Cloud and Stux.Music
+- **Services & tools:** GitHup
+- **Elsewhere:** links to Stux.Dev, StuxAPIs, Ream.st and Stux.Music Status, which check those brands' own services
 
 To add a service, add a monitor to the right group there (or a new group).
 

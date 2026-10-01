@@ -53,21 +53,13 @@ groups:
         description: The cloud and infrastructure brand behind Stuxedo
       - name: Stux.Music
         url: https://stux.music/
-      - name: Ream.st
-        url: https://ream.st/
 
   - name: Services & tools
-    description: Services and tools run across Stux.Group, as listed on services.stux.group.
+    description: Stux.Group's own services, as listed on services.stux.group.
     monitors:
       - name: GitHup
         url: https://githup.stux.group/
         description: The GitHup website and demo
-      - name: Multi.st Twitch
-        url: https://twitch.multi.st/
-        description: Several Twitch streams at once, by Ream.st
-      - name: Multi.st YouTube
-        url: https://youtube.multi.st/
-        description: Several YouTube streams at once, by Ream.st
 
   - name: Elsewhere
     description: Services checked on their own brand's status page.
@@ -78,6 +70,9 @@ groups:
       - name: StuxAPIs Status
         url: https://status.stuxapis.net
         description: SeasonalOverlaysLibrary, Kittens and SecretGen
+      - name: Ream.st Status
+        url: https://status.ream.st
+        description: Ream.st, Multi.st, Multi.st Twitch and Multi.st YouTube
       - name: Stux.Music Status
         url: https://status.stux.music
         description: Stux.Music's artist sites, including Stux Sharp
