@@ -3,6 +3,11 @@
 All notable changes to Stux.Group's status page (status.stux.group) are documented here. It
 follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.4.4
+
+### Fixed
+
+- A double blank line in `CHANGELOG.md`, so the Markdown files pass markdownlint
 
 ## v1.4.3
 
