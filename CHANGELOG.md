@@ -3,6 +3,17 @@
 All notable changes to Stux.Group's status page (status.stux.group) are documented here. It
 follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.4.9
+
+### Added
+
+- An "Elsewhere" link section pointing to Stux.Dev Status, StuxAPIs Status and Stux.Music Status, for the services checked on their own brand's page
+
+### Changed
+
+- The Services group is now "Services & tools", matching services.stux.group, and holds GitHup, Multi.st Twitch and Multi.st YouTube
+- Ream.st moved to Brands, and the Streaming group is gone (monitor history is kept)
+
 ## v1.4.8
 
 ### Changed
