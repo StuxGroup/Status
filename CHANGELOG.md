@@ -4,6 +4,12 @@ All notable changes to Stux.Group's status page (status.stux.group) are document
 follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## v1.4.3
+
+### Changed
+
+- Opted in to GitHup v1.8.0's `fill-gaps` option (`repeat: 4`, `repeat-interval: 300`): when GitHub runs the 5-minute schedule late, a run now checks up to 4 times, 5 minutes apart, instead of once. A run that is on time still checks once. GitHub often runs the 5-minute schedule only every few hours. The check job's timeout is now 25 minutes
+
 ## v1.4.2
 
 ### Removed

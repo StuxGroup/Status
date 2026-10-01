@@ -30,7 +30,7 @@ jobs:
     # Pushes only change the page, so they skip straight to the build.
     if: github.event_name != 'push'
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 25
     outputs:
       changed: ${{ steps.check.outputs.status-changed }}
     steps:
@@ -41,6 +41,10 @@ jobs:
         uses: StuxGroup/GitHup@v1
         with:
           mode: check
+          # Opt in: if GitHub runs the schedule late, catch up (up to 4 checks, 5 minutes apart).
+          fill-gaps: "true"
+          repeat: 4
+          repeat-interval: 300
 
   deploy:
     needs: check
