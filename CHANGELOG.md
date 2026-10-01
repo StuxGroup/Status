@@ -3,6 +3,12 @@
 All notable changes to Stux.Group's status page (status.stux.group) are documented here. It
 follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.4.5
+
+### Added
+
+- A "StuxAPIs" group monitoring SeasonalOverlaysLibrary, Kittens and SecretGen (Lunar Calendar is not monitored because its site does not serve yet)
+
 ## v1.4.4
 
 ### Fixed
