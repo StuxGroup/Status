@@ -3,6 +3,12 @@
 All notable changes to Stux.Group's status page (status.stux.group) are documented here. It
 follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.6.0
+
+### Added
+
+- A "Server certificates" group with a monitor for each Stux.Cloud server (robo1, tiny1, kitt1 and mixr1). Each server checks daily that every certificate it uses has more than 21 days left and publishes `certificates-ok.txt` while it does, so an expiring certificate shows as down and opens an incident Issue
+
 ## v1.5.1
 
 ### Changed
