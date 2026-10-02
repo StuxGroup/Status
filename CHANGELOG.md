@@ -3,6 +3,12 @@
 All notable changes to Stux.Group's status page (status.stux.group) are documented here. It
 follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.8.0
+
+### Added
+
+- down1 (United States) in the Servers group: an up/down monitor for its instance page and its certificate check, now that it runs a web server like the other Stux.Cloud servers
+
 ## v1.7.0
 
 ### Added

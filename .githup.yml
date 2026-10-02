@@ -64,7 +64,7 @@ groups:
   # Each Stux.Cloud server's instance page, and its certificate check: every server checks daily that
   # each certificate it uses has more than 21 days left (/usr/local/sbin/cert-expiry-check) and
   # publishes certificates-ok.txt while it does. The Stux.Cloud and Stuxedo region pages read the
-  # server monitors (slugs robo1, tiny1, kitt1, mixr1) for their live status.
+  # server monitors (slugs robo1, tiny1, kitt1, mixr1, down1) for their live status.
   - name: Servers
     description: The Stux.Cloud servers, and whether every certificate on each has more than 21 days left.
     monitors:
@@ -80,6 +80,9 @@ groups:
       - name: mixr1
         url: https://mixr1.servers.es.stux.cloud/
         description: Spain
+      - name: down1
+        url: https://down1.servers.us.stux.cloud/
+        description: United States
       - name: robo1 certificates
         url: https://robo1.servers.uk.stux.cloud/certificates-ok.txt
         description: robo1 (UK)
@@ -92,6 +95,9 @@ groups:
       - name: mixr1 certificates
         url: https://mixr1.servers.es.stux.cloud/certificates-ok.txt
         description: mixr1 (ES), including Termix
+      - name: down1 certificates
+        url: https://down1.servers.us.stux.cloud/certificates-ok.txt
+        description: down1 (US)
 
   - name: Elsewhere
     description: Services checked on their own brand's status page.
