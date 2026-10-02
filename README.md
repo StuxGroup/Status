@@ -34,10 +34,12 @@ Updated by GitHup whenever the status page is rebuilt (hourly, and when a status
 | Servers | [tiny1](https://tiny1.servers.uk.stux.cloud/) | Up | 100.00% | 100.00% | 100.00% | 283 ms |
 | Servers | [kitt1](https://kitt1.servers.ca.stux.cloud/) | Up | 100.00% | 100.00% | 100.00% | 140 ms |
 | Servers | [mixr1](https://mixr1.servers.es.stux.cloud/) | Up | 100.00% | 100.00% | 100.00% | 322 ms |
+| Servers | [down1](https://down1.servers.us.stux.cloud/) | No data | n/a | n/a | n/a | n/a |
 | Servers | [robo1 certificates](https://robo1.servers.uk.stux.cloud/certificates-ok.txt) | Up | 100.00% | 100.00% | 100.00% | 278 ms |
 | Servers | [tiny1 certificates](https://tiny1.servers.uk.stux.cloud/certificates-ok.txt) | Up | 100.00% | 100.00% | 100.00% | 283 ms |
 | Servers | [kitt1 certificates](https://kitt1.servers.ca.stux.cloud/certificates-ok.txt) | Up | 100.00% | 100.00% | 100.00% | 118 ms |
 | Servers | [mixr1 certificates](https://mixr1.servers.es.stux.cloud/certificates-ok.txt) | Up | 100.00% | 100.00% | 100.00% | 321 ms |
+| Servers | [down1 certificates](https://down1.servers.us.stux.cloud/certificates-ok.txt) | No data | n/a | n/a | n/a | n/a |
 <!-- githup:end -->
 
 ## What's monitored
