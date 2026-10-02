@@ -44,7 +44,7 @@ in five groups (the last is links only):
 - **Stux.Group:** Stux.Group, Stux.Group Services and the Stux.Group media CDN
 - **Brands:** Stux.Dev, Stuxedo, Stux.Cloud and Stux.Music
 - **Services & tools:** GitHup
-- **Server certificates:** robo1, tiny1, kitt1 and mixr1, each reporting whether all its certificates have more than 21 days left
+- **Servers:** robo1, tiny1, kitt1 and mixr1 (up/down), and whether all each one's certificates have more than 21 days left
 - **Elsewhere:** links to Stux.Dev, StuxAPIs, Ream.st and Stux.Music Status, which check those brands' own services
 
 To add a service, add a monitor to the right group there (or a new group).

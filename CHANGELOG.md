@@ -3,6 +3,16 @@
 All notable changes to Stux.Group's status page (status.stux.group) are documented here. It
 follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.7.0
+
+### Added
+
+- Up/down monitors for the Stux.Cloud servers robo1, tiny1, kitt1 and mixr1 (their instance pages), which the Stux.Cloud and Stuxedo region pages read for live status
+
+### Changed
+
+- The "Server certificates" group is now "Servers", holding each server's monitor and its certificate monitor (history is kept)
+
 ## v1.6.0
 
 ### Added

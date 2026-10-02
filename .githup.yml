@@ -61,11 +61,25 @@ groups:
         url: https://githup.stux.group/
         description: The GitHup website and demo
 
-  # Each Stux.Cloud/Stuxedo server checks daily that every certificate it uses has more than 21 days
-  # left (/usr/local/sbin/cert-expiry-check) and publishes certificates-ok.txt while it does.
-  - name: Server certificates
-    description: Every certificate on each Stux.Cloud server has more than 21 days left.
+  # Each Stux.Cloud server's instance page, and its certificate check: every server checks daily that
+  # each certificate it uses has more than 21 days left (/usr/local/sbin/cert-expiry-check) and
+  # publishes certificates-ok.txt while it does. The Stux.Cloud and Stuxedo region pages read the
+  # server monitors (slugs robo1, tiny1, kitt1, mixr1) for their live status.
+  - name: Servers
+    description: The Stux.Cloud servers, and whether every certificate on each has more than 21 days left.
     monitors:
+      - name: robo1
+        url: https://robo1.servers.uk.stux.cloud/
+        description: UK
+      - name: tiny1
+        url: https://tiny1.servers.uk.stux.cloud/
+        description: UK
+      - name: kitt1
+        url: https://kitt1.servers.ca.stux.cloud/
+        description: Canada
+      - name: mixr1
+        url: https://mixr1.servers.es.stux.cloud/
+        description: Spain
       - name: robo1 certificates
         url: https://robo1.servers.uk.stux.cloud/certificates-ok.txt
         description: robo1 (UK)
