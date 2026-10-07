@@ -18,28 +18,28 @@ Updated by GitHup whenever the status page is rebuilt (hourly, and when a status
 <!-- githup:start -->
 <!-- This table is written by GitHup (https://github.com/StuxGroup/GitHup); edits here are overwritten. -->
 
-**Partial outage** · [Live status page](https://status.stux.group/)
+**All systems operational** · [Live status page](https://status.stux.group/)
 
 | Group | Monitor | Status | Uptime (24 h) | Uptime (7 d) | Uptime (30 d) | Response time (24 h) |
 | ----- | ------- | ------ | ------------- | ------------ | ------------- | -------------------- |
-| Stux.Group | [Stux.Group](https://stux.group/) | **Down** | 96.96% | 99.61% | 99.62% | 417 ms |
-| Stux.Group | [Stux.Group Services](https://services.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 404 ms |
-| Stux.Group | [Stux.Group Media CDN](https://global.media.stux.group/icon.png) | Up | 100.00% | 100.00% | 100.00% | 434 ms |
-| Brands | [Stux.Dev](https://stux.dev/) | **Down** | 96.96% | 99.61% | 99.62% | 606 ms |
-| Brands | [Stuxedo](https://stuxedo.com/) | **Down** | 96.96% | 99.61% | 99.62% | 523 ms |
-| Brands | [Stux.Cloud](https://stux.cloud/) | **Down** | 96.96% | 99.58% | 99.58% | 383 ms |
-| Brands | [Stux.Music](https://stux.music/) | **Down** | 96.96% | 99.61% | 99.62% | 848 ms |
-| Services & tools | [GitHup](https://githup.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 283 ms |
-| Servers | [robo1](https://robo1.servers.uk.stux.cloud/) | Up | 100.00% | 100.00% | 100.00% | 386 ms |
-| Servers | [tiny1](https://tiny1.servers.uk.stux.cloud/) | Up | 100.00% | 100.00% | 100.00% | 391 ms |
-| Servers | [kitt1](https://kitt1.servers.ca.stux.cloud/) | Up | 100.00% | 100.00% | 100.00% | 173 ms |
-| Servers | [mixr1](https://mixr1.servers.es.stux.cloud/) | Up | 100.00% | 100.00% | 100.00% | 424 ms |
-| Servers | [down1](https://down1.servers.us.stux.cloud/) | Up | 100.00% | 100.00% | 100.00% | 176 ms |
-| Servers | [robo1 certificates](https://robo1.servers.uk.stux.cloud/certificates-ok.txt) | Up | 100.00% | 100.00% | 100.00% | 397 ms |
-| Servers | [tiny1 certificates](https://tiny1.servers.uk.stux.cloud/certificates-ok.txt) | Up | 100.00% | 100.00% | 100.00% | 393 ms |
-| Servers | [kitt1 certificates](https://kitt1.servers.ca.stux.cloud/certificates-ok.txt) | Up | 100.00% | 100.00% | 100.00% | 168 ms |
-| Servers | [mixr1 certificates](https://mixr1.servers.es.stux.cloud/certificates-ok.txt) | Up | 100.00% | 100.00% | 100.00% | 421 ms |
-| Servers | [down1 certificates](https://down1.servers.us.stux.cloud/certificates-ok.txt) | Up | 100.00% | 100.00% | 100.00% | 178 ms |
+| Stux.Group | [Stux.Group](https://stux.group/) | Up | 96.55% | 99.61% | 99.62% | 407 ms |
+| Stux.Group | [Stux.Group Services](https://services.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 439 ms |
+| Stux.Group | [Stux.Group Media CDN](https://global.media.stux.group/icon.png) | Up | 100.00% | 100.00% | 100.00% | 408 ms |
+| Brands | [Stux.Dev](https://stux.dev/) | Up | 96.55% | 99.61% | 99.62% | 621 ms |
+| Brands | [Stuxedo](https://stuxedo.com/) | Up | 96.55% | 99.61% | 99.62% | 516 ms |
+| Brands | [Stux.Cloud](https://stux.cloud/) | Up | 96.55% | 99.59% | 99.59% | 402 ms |
+| Brands | [Stux.Music](https://stux.music/) | Up | 96.55% | 99.61% | 99.62% | 887 ms |
+| Services & tools | [GitHup](https://githup.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 293 ms |
+| Servers | [robo1](https://robo1.servers.uk.stux.cloud/) | Up | 100.00% | 100.00% | 100.00% | 376 ms |
+| Servers | [tiny1](https://tiny1.servers.uk.stux.cloud/) | Up | 100.00% | 100.00% | 100.00% | 382 ms |
+| Servers | [kitt1](https://kitt1.servers.ca.stux.cloud/) | Up | 100.00% | 100.00% | 100.00% | 164 ms |
+| Servers | [mixr1](https://mixr1.servers.es.stux.cloud/) | Up | 100.00% | 100.00% | 100.00% | 412 ms |
+| Servers | [down1](https://down1.servers.us.stux.cloud/) | Up | 100.00% | 100.00% | 100.00% | 166 ms |
+| Servers | [robo1 certificates](https://robo1.servers.uk.stux.cloud/certificates-ok.txt) | Up | 100.00% | 100.00% | 100.00% | 390 ms |
+| Servers | [tiny1 certificates](https://tiny1.servers.uk.stux.cloud/certificates-ok.txt) | Up | 100.00% | 100.00% | 100.00% | 385 ms |
+| Servers | [kitt1 certificates](https://kitt1.servers.ca.stux.cloud/certificates-ok.txt) | Up | 100.00% | 100.00% | 100.00% | 161 ms |
+| Servers | [mixr1 certificates](https://mixr1.servers.es.stux.cloud/certificates-ok.txt) | Up | 100.00% | 100.00% | 100.00% | 413 ms |
+| Servers | [down1 certificates](https://down1.servers.us.stux.cloud/certificates-ok.txt) | Up | 100.00% | 100.00% | 100.00% | 166 ms |
 <!-- githup:end -->
 
 ## What's monitored
