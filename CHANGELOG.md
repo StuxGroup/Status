@@ -3,6 +3,12 @@
 All notable changes to Stux.Group's status page (status.stux.group) are documented here. It
 follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.8.1
+
+### Changed
+
+- The Servers group checks every server under its new `stuxedo.net` name (e.g. `down1.servers.us.stuxedo.net`) instead of `stux.cloud`, for both its instance page and its certificate check. The monitor names, and so their slugs and uptime history, are unchanged, so the Stux.Cloud and Stuxedo region pages keep working
+
 ## v1.8.0
 
 ### Added

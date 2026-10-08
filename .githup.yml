@@ -69,34 +69,34 @@ groups:
     description: The Stux.Cloud servers, and whether every certificate on each has more than 21 days left.
     monitors:
       - name: robo1
-        url: https://robo1.servers.uk.stux.cloud/
+        url: https://robo1.servers.uk.stuxedo.net/
         description: UK
       - name: tiny1
-        url: https://tiny1.servers.uk.stux.cloud/
+        url: https://tiny1.servers.uk.stuxedo.net/
         description: UK
       - name: kitt1
-        url: https://kitt1.servers.ca.stux.cloud/
+        url: https://kitt1.servers.ca.stuxedo.net/
         description: Canada
       - name: mixr1
-        url: https://mixr1.servers.es.stux.cloud/
+        url: https://mixr1.servers.es.stuxedo.net/
         description: Spain
       - name: down1
-        url: https://down1.servers.us.stux.cloud/
+        url: https://down1.servers.us.stuxedo.net/
         description: United States
       - name: robo1 certificates
-        url: https://robo1.servers.uk.stux.cloud/certificates-ok.txt
+        url: https://robo1.servers.uk.stuxedo.net/certificates-ok.txt
         description: robo1 (UK)
       - name: tiny1 certificates
-        url: https://tiny1.servers.uk.stux.cloud/certificates-ok.txt
+        url: https://tiny1.servers.uk.stuxedo.net/certificates-ok.txt
         description: tiny1 (UK), including Sm.lol's Cloudflare Origin Certificate
       - name: kitt1 certificates
-        url: https://kitt1.servers.ca.stux.cloud/certificates-ok.txt
+        url: https://kitt1.servers.ca.stuxedo.net/certificates-ok.txt
         description: kitt1 (CA), including Kittens
       - name: mixr1 certificates
-        url: https://mixr1.servers.es.stux.cloud/certificates-ok.txt
+        url: https://mixr1.servers.es.stuxedo.net/certificates-ok.txt
         description: mixr1 (ES), including Termix
       - name: down1 certificates
-        url: https://down1.servers.us.stux.cloud/certificates-ok.txt
+        url: https://down1.servers.us.stuxedo.net/certificates-ok.txt
         description: down1 (US)
 
   - name: Elsewhere
