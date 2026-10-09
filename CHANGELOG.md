@@ -3,6 +3,21 @@
 All notable changes to Stux.Group's status page (status.stux.group) are documented here. It
 follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.9.0
+
+### Added
+
+- Elsewhere links every brand's own status page, in the Stux.Group website's order: Stuxedo Status (new, status.stuxedo.net) and Stuxedo's web hosting status (stuxedostatus.com), Stux.Dev, StuxAPIs, Stux.Music, Stux.Digital, Stux.Design and Stux.Games Status, then Ream.st Status
+
+### Changed
+
+- The logos and icons in the Markdown docs follow GitHub's light or dark theme, using each brand's `-light`/`-dark` files
+- Brands only checks brands without a status page of their own yet (now just Stux.Cloud); Stux.Dev, Stuxedo and Stux.Music are checked on their own status pages
+
+### Removed
+
+- The Servers group (robo1, tiny1, kitt1, mixr1, down1 and their certificate checks) and the Stuxedo site monitor: they're hosted by Stuxedo and now checked on Stuxedo Status, which took their history and slugs, so the Stuxedo and Stux.Cloud region pages keep their live status. Their data, and the Stux.Dev and Stux.Music monitors' data, is removed from `data/`
+
 ## v1.8.1
 
 ### Changed

@@ -40,19 +40,13 @@ groups:
         url: https://global.media.stux.group/icon.png
         description: Shared logos and images used across every Stux.Group site
 
+  # Brands with a status page of their own are linked under Elsewhere instead.
   - name: Brands
-    description: Stux.Group's companies.
+    description: Stux.Group brands without a status page of their own yet.
     monitors:
-      - name: Stux.Dev
-        url: https://stux.dev/
-      - name: Stuxedo
-        url: https://stuxedo.com/
-        description: Hosting and cloud services
       - name: Stux.Cloud
         url: https://stux.cloud/
         description: The cloud and infrastructure brand behind Stuxedo
-      - name: Stux.Music
-        url: https://stux.music/
 
   - name: Services & tools
     description: Stux.Group's own services, as listed on services.stux.group.
@@ -61,59 +55,39 @@ groups:
         url: https://githup.stux.group/
         description: The GitHup website and demo
 
-  # Each Stux.Cloud server's instance page, and its certificate check: every server checks daily that
-  # each certificate it uses has more than 21 days left (/usr/local/sbin/cert-expiry-check) and
-  # publishes certificates-ok.txt while it does. The Stux.Cloud and Stuxedo region pages read the
-  # server monitors (slugs robo1, tiny1, kitt1, mixr1, down1) for their live status.
-  - name: Servers
-    description: The Stux.Cloud servers, and whether every certificate on each has more than 21 days left.
-    monitors:
-      - name: robo1
-        url: https://robo1.servers.uk.stuxedo.net/
-        description: UK
-      - name: tiny1
-        url: https://tiny1.servers.uk.stuxedo.net/
-        description: UK
-      - name: kitt1
-        url: https://kitt1.servers.ca.stuxedo.net/
-        description: Canada
-      - name: mixr1
-        url: https://mixr1.servers.es.stuxedo.net/
-        description: Spain
-      - name: down1
-        url: https://down1.servers.us.stuxedo.net/
-        description: United States
-      - name: robo1 certificates
-        url: https://robo1.servers.uk.stuxedo.net/certificates-ok.txt
-        description: robo1 (UK)
-      - name: tiny1 certificates
-        url: https://tiny1.servers.uk.stuxedo.net/certificates-ok.txt
-        description: tiny1 (UK), including Sm.lol's Cloudflare Origin Certificate
-      - name: kitt1 certificates
-        url: https://kitt1.servers.ca.stuxedo.net/certificates-ok.txt
-        description: kitt1 (CA), including Kittens
-      - name: mixr1 certificates
-        url: https://mixr1.servers.es.stuxedo.net/certificates-ok.txt
-        description: mixr1 (ES), including Termix
-      - name: down1 certificates
-        url: https://down1.servers.us.stuxedo.net/certificates-ok.txt
-        description: down1 (US)
-
+  # In the Stux.Group website's brand order, then services with their own status pages.
+  # The servers and their certificate checks moved to Stuxedo Status on 9 October 2026 (with
+  # their history and slugs); the Stuxedo and Stux.Cloud region pages read them from there.
   - name: Elsewhere
-    description: Services checked on their own brand's status page.
+    description: Brands and services checked on their own status pages.
     links:
+      - name: Stuxedo Status
+        url: https://status.stuxedo.net
+        description: Stuxedo's servers (robo1, tiny1, kitt1, mixr1, down1), their certificates, and stuxedo.com
+      - name: Stuxedo Web Hosting Status
+        url: https://stuxedostatus.com
+        description: Stuxedo's web hosting platform
       - name: Stux.Dev Status
         url: https://status.stux.dev
-        description: Stuxs.Tools, Downl.one, AutoScroll, Sm.lol and Stux.Dev Labs
+        description: Stux.Dev, Stuxs.Tools, Downl.one, AutoScroll, Sm.lol and Stux.Dev Labs
       - name: StuxAPIs Status
         url: https://status.stuxapis.net
-        description: SeasonalOverlaysLibrary, Kittens and SecretGen
+        description: SeasonalOverlaysLibrary, Kittens, SecretGen and GithubStats
+      - name: Stux.Music Status
+        url: https://status.stux.music
+        description: Stux.Music and its artist sites, including Stux Sharp
+      - name: Stux.Digital Status
+        url: https://status.stux.digital
+        description: Stux.Digital and the client sites it takes from idea to online
+      - name: Stux.Design Status
+        url: https://status.stux.design
+        description: Stux.Design and its sites
+      - name: Stux.Games Status
+        url: https://status.stux.games
+        description: Stux.Games and its sites
       - name: Ream.st Status
         url: https://status.ream.st
         description: Ream.st, Multi.st, Multi.st Twitch and Multi.st YouTube
-      - name: Stux.Music Status
-        url: https://status.stux.music
-        description: Stux.Music's artist sites, including Stux Sharp
 
 incidents:
   labels: [status]
