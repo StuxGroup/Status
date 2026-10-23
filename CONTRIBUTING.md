@@ -23,8 +23,8 @@ You need Python 3.11+ and nothing else.
   [GitHup README](https://github.com/StuxGroup/GitHup#config-reference). Only add services
   Stux.Group runs.
 - **The status page itself is GitHup's.** Change how it looks or works in GitHup, not here.
-  `site/` only holds the `/legal` pages and `404.html`, which share `site/assets/pages.css` and
-  `pages.js`. Their header and footer are repeated in every page; change them all together.
+  GitHup also generates the `/legal` pages, `404.html` and the sitemap from `.githup.yml`; nothing
+  on the site is hand-made in this repo.
 - **Legal pages.** Every page's footer links to **Boring Legal Stuff** at `/legal/`, which links
   to Privacy Policy, Terms and Ethics, Cookies Policy, Imprint, Disclaimer and Opt-Out
   Preferences. Keep them accurate.
@@ -32,8 +32,24 @@ You need Python 3.11+ and nothing else.
 
 ## Versioning and changelog
 
-- The version lives in `VERSION.md` (a bare version string). Bump it on every release.
+- Status uses [Date Versioning](https://datevers.ing) (since v26.10.23; Semantic Versioning
+  before that): the version is the UTC date of the release as `YY.MM.DD` (e.g. `26.10.22`), and a
+  second release on the same UTC day is `26.10.22-1`, then `-2` and so on. Use `date -u`, not
+  local time. Never a future date, never a date before the latest release, and a released version
+  is never reused.
+- The version lives in `VERSION.md` (the bare version, no `v`). Set it on every release. The `v`
+  only appears in git tags (`v26.10.22`) and changelog headings.
 - Every release gets a `CHANGELOG.md` entry using `###` subsections in this order: Added,
   Changed, Fixed, Removed, Security, Deprecated. Never a bare bullet list under a version.
-- `commit.sh` (bash) and `commit.bat` (Windows) read `VERSION.md`, commit and create the
-  annotated `vX.Y.Z` tag. Push with `git push origin main vX.Y.Z`.
+- `commit.sh` (bash) and `commit.bat` (Windows) read `VERSION.md`, refuse anything that isn't a
+  valid Date Version (or is dated in the future, UTC), commit as `Release vX` and create the
+  annotated `vX` tag. They don't push: push with `git push origin main vX`.
+
+## Tests
+
+```bash
+./tests/run.sh
+```
+
+Plain bash, no dependencies. It checks that `VERSION.md` is a valid Date Version, a real calendar
+date, and the same as the newest `## v...` heading in `CHANGELOG.md`. Run it before every release.

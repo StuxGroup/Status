@@ -83,6 +83,12 @@ GitHub Pages, deployed by Actions (**Settings → Pages → Source: GitHub Actio
 domain `status.stux.group` set in the Pages settings. DNS: a `CNAME` record for `status` pointing
 at `stuxgroup.github.io`.
 
+## Versioning
+
+This repo uses [Date Versioning](https://datevers.ing): each release is numbered by its UTC
+release date as `YY.MM.DD` (e.g. `26.10.22`), with `-1`, `-2`… for further releases that day. See
+[CHANGELOG.md](CHANGELOG.md) for what changed in each.
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).

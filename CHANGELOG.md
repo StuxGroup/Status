@@ -1,7 +1,19 @@
 # Changelog
 
-All notable changes to Stux.Group's status page (status.stux.group) are documented here. It
-follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+All notable changes to Stux.Group's status page (status.stux.group) are documented here. Since
+v26.10.23 it uses [Date Versioning](https://datevers.ing) (`YY.MM.DD`, the UTC release date, with
+`-1`, `-2`… for later releases the same day); earlier releases used Semantic Versioning.
+
+## v26.10.23
+
+### Added
+
+- `tests/run.sh`, a dependency-free test runner, with a test that `VERSION.md` is a valid Date Version, a real calendar date, and matches the newest `CHANGELOG.md` heading
+
+### Changed
+
+- **Status now uses [Date Versioning](https://datevers.ing) instead of Semantic Versioning.** Versions are the UTC release date as `YY.MM.DD`, with `-1`, `-2`… for further releases the same day, so this release follows v1.9.0 as v26.10.23. `commit.sh` / `commit.bat` refuse a `VERSION.md` that isn't a valid Date Version or is dated in the future (UTC), and warn when it's dated before today
+- `CONTRIBUTING.md` no longer mentions a hand-made `site/` folder: GitHup generates the legal pages and 404 page from `.githup.yml`
 
 ## v1.9.0
 
