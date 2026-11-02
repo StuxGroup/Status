@@ -18,15 +18,15 @@ Updated by GitHup whenever the status page is rebuilt (hourly, and when a status
 <!-- githup:start -->
 <!-- This table is written by GitHup (https://github.com/StuxGroup/GitHup); edits here are overwritten. -->
 
-**All systems operational** · [Live status page](https://status.stux.group/)
+**Partial outage** · [Live status page](https://status.stux.group/)
 
 | Group | Monitor | Status | Uptime (24 h) | Uptime (7 d) | Uptime (30 d) | Response time (24 h) |
 | ----- | ------- | ------ | ------------- | ------------ | ------------- | -------------------- |
-| Stux.Group | [Stux.Group](https://stux.group/) | Up | 87.50% | 94.00% | 98.51% | 10103 ms |
-| Stux.Group | [Stux.Group Services](https://services.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 209 ms |
-| Stux.Group | [Stux.Group Media CDN](https://global.media.stux.group/icon.png) | Up | 100.00% | 100.00% | 100.00% | 349 ms |
-| Brands | [Stux.Cloud](https://stux.cloud/) | Up | 100.00% | 99.60% | 99.82% | 471 ms |
-| Services & tools | [GitHup](https://githup.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 217 ms |
+| Stux.Group | [Stux.Group](https://stux.group/) | **Down** | 86.11% | 93.41% | 98.42% | 10031 ms |
+| Stux.Group | [Stux.Group Services](https://services.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 193 ms |
+| Stux.Group | [Stux.Group Media CDN](https://global.media.stux.group/icon.png) | Up | 100.00% | 100.00% | 100.00% | 343 ms |
+| Brands | [Stux.Cloud](https://stux.cloud/) | Up | 100.00% | 99.58% | 99.82% | 502 ms |
+| Services & tools | [GitHup](https://githup.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 203 ms |
 <!-- githup:end -->
 
 ## What's monitored
