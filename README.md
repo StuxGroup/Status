@@ -22,11 +22,11 @@ Updated by GitHup whenever the status page is rebuilt (hourly, and when a status
 
 | Group | Monitor | Status | Uptime (24 h) | Uptime (7 d) | Uptime (30 d) | Response time (24 h) |
 | ----- | ------- | ------ | ------------- | ------------ | ------------- | -------------------- |
-| Stux.Group | [Stux.Group](https://stux.group/) | Up | 95.83% | 93.19% | 98.40% | 1952 ms |
-| Stux.Group | [Stux.Group Services](https://services.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 184 ms |
-| Stux.Group | [Stux.Group Media CDN](https://global.media.stux.group/icon.png) | Up | 100.00% | 100.00% | 100.00% | 330 ms |
-| Brands | [Stux.Cloud](https://stux.cloud/) | Up | 100.00% | 99.57% | 99.82% | 283 ms |
-| Services & tools | [GitHup](https://githup.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 190 ms |
+| Stux.Group | [Stux.Group](https://stux.group/) | Up | 100.00% | 93.19% | 98.40% | 884 ms |
+| Stux.Group | [Stux.Group Services](https://services.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 176 ms |
+| Stux.Group | [Stux.Group Media CDN](https://global.media.stux.group/icon.png) | Up | 100.00% | 100.00% | 100.00% | 315 ms |
+| Brands | [Stux.Cloud](https://stux.cloud/) | Up | 100.00% | 99.57% | 99.82% | 285 ms |
+| Services & tools | [GitHup](https://githup.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 199 ms |
 <!-- githup:end -->
 
 ## What's monitored
