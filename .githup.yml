@@ -50,6 +50,25 @@ groups:
       - name: GitHup
         url: https://githup.stux.group/
         description: The GitHup website and demo
+      - name: Date Versioning
+        url: https://datevers.ing/
+        description: The Date Versioning specification and website
+
+  - name: Templates & redirects
+    description: Stux.Group's page templates, as listed on services.stux.group, and its GitHub Pages redirect.
+    monitors:
+      - name: Stux.Group Soonpage
+        url: https://soonpage.stux.group/
+        description: The coming-soon page template
+      - name: Stux.Group Maintenancepage
+        url: https://maintenancepage.stux.group/
+        description: The maintenance page template
+      - name: Stux.Group Servicepage
+        url: https://servicepage.stux.group/
+        description: The placeholder page for services not set up yet
+      - name: stuxgroup.github.io
+        url: https://stuxgroup.github.io/
+        description: Redirects Stux.Group's GitHub Pages address to the StuxGroup organization on GitHub
 
   # In the Stux.Group website's brand order, then services with their own status pages.
   # The servers and their certificate checks moved to Stuxedo Server Status (status.stuxedo.net) on 9 October 2026 (with
