@@ -43,7 +43,9 @@ You need Python 3.11+ and nothing else.
   Changed, Fixed, Removed, Security, Deprecated. Never a bare bullet list under a version.
 - `commit.sh` (bash) and `commit.bat` (Windows) read `VERSION.md`, refuse anything that isn't a
   valid Date Version (or is dated in the future, UTC), commit as `Release vX` and create the
-  annotated `vX` tag. They don't push: push with `git push origin main vX`.
+  annotated `vX` tag. They don't push: push with `git push origin test vX`, then open a pull
+  request from `test` into `main`.
+- Work happens on `test` (or a branch off it), never on `main`. Changes reach `main` only through a pull request from `test`; the release commit and tag are made on `test` and go live when the pull request is merged.
 
 ## Tests
 
