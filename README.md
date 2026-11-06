@@ -37,7 +37,7 @@ in three groups (the last is links only):
 - **Stux.Group:** Stux.Group, Stux.Group Services and the Stux.Group media CDN
 - **Services & tools:** GitHup
 - **Elsewhere:** links to every brand's own status page, in the Stux.Group website's order
-  (Stuxedo Server Status, with Stuxedo's servers and their certificates, and Stuxedo's web hosting status;
+  (Stuxedo Status, which leads to Stuxedo's web hosting status and its servers and their certificates;
   Stux.Dev; Stux.Cloud; StuxAPIs; Stux.Music; Stux.Digital; Stux.Design; Stux.Games), then Ream.st Status
 
 The servers and their certificate checks moved to [Stuxedo Server Status](https://status.stuxedo.net)

@@ -4,6 +4,14 @@ All notable changes to Stux.Group's status page (status.stux.group) are document
 v26.10.23 it uses [Date Versioning](https://datevers.ing) (`YY.MM.DD`, the UTC release date, with
 `-1`, `-2`… for later releases the same day); earlier releases used Semantic Versioning.
 
+## v26.11.06-2
+
+### Changed
+
+- **Stuxedo has one link, Stuxedo Status** (status.stuxedo.com), Stuxedo's status landing page. It replaces the
+  two links straight to its server status (status.stuxedo.net) and its web hosting status (stuxedostatus.com),
+  which the landing page leads to.
+
 ## v26.11.06-1
 
 ### Added
