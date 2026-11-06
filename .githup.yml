@@ -4,8 +4,9 @@
 site:
   name: Stux.Group Status
   description: Live status of Stux.Group's websites and services, checked every 5 minutes.
-  logo: https://global.media.stux.group/icon.png
-  favicon: https://global.media.stux.group/icon.png
+  # Its own badge icon (the Stux.Group mark with a heartbeat badge), as on services.stux.group.
+  logo: https://services.stux.group/assets/img/services/stux-group-status.png
+  favicon: https://services.stux.group/assets/img/services/stux-group-status.png
   accent: "#0f73ff"
   url: https://status.stux.group/
   footer_links:
