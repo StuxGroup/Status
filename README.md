@@ -25,7 +25,6 @@ Updated by GitHup whenever the status page is rebuilt (hourly, and when a status
 | Stux.Group | [Stux.Group](https://stux.group/) | Up | 100.00% | 93.57% | 98.38% | 895 ms |
 | Stux.Group | [Stux.Group Services](https://services.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 176 ms |
 | Stux.Group | [Stux.Group Media CDN](https://global.media.stux.group/icon.png) | Up | 100.00% | 100.00% | 100.00% | 285 ms |
-| Brands | [Stux.Cloud](https://stux.cloud/) | Up | 100.00% | 100.00% | 99.82% | 395 ms |
 | Services & tools | [GitHup](https://githup.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 170 ms |
 <!-- githup:end -->
 
