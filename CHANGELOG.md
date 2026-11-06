@@ -4,6 +4,15 @@ All notable changes to Stux.Group's status page (status.stux.group) are document
 v26.10.23 it uses [Date Versioning](https://datevers.ing) (`YY.MM.DD`, the UTC release date, with
 `-1`, `-2`… for later releases the same day); earlier releases used Semantic Versioning.
 
+## v26.11.06
+
+### Changed
+
+- **The page's logo and favicon are Stux.Group Status's own badge icon** (the Stux.Group mark with a heartbeat
+  badge, as on services.stux.group) instead of the plain Stux.Group icon. The README's header shows it too, under
+  the full name, Stux.Group Status.
+- `commit.sh` and `commit.bat`'s push hints name the `test` branch: releases reach `main` through a pull request.
+
 ## v26.10.23
 
 ### Added

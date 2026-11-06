@@ -1,8 +1,8 @@
 <p align="center">
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://global.media.stux.group/logo-light.png"><source media="(prefers-color-scheme: light)" srcset="https://global.media.stux.group/logo-dark.png"><img src="https://global.media.stux.group/logo-dark.png" height="100" alt="Stux.Group Logo"></picture>
+  <img src="https://services.stux.group/assets/img/services/stux-group-status.png" height="100" alt="Stux.Group Status icon">
 </p>
 
-# Status
+# Stux.Group Status
 
 ### *Live status of Stux.Group's websites and services, powered by [GitHup](https://githup.stux.group).*
 
