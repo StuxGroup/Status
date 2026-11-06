@@ -60,6 +60,8 @@ To announce planned maintenance, open an Issue yourself with the `githup` and `i
   footer shows only **Powered by GitHup vX.Y.Z**, linking to
   [GitHup's changelog](https://githup.stux.group/changelogs/#githup), so GitHup's is the one version and
   changelog on the page. This repo's own `CHANGELOG.md` and `VERSION.md` are for this repo only.
+- **`site.logo` and `site.favicon`** are Stux.Group Status's own badge icon (the Stux.Group mark with a
+  heartbeat badge), served from services.stux.group, where `scripts/badge-icons.py` makes it.
 - **`data/`** is the monitoring history. Don't edit it by hand.
 - **The status table above** is written by GitHup's `readme` mode between the
   `<!-- githup:start -->` and `<!-- githup:end -->` markers. Don't edit inside them.
@@ -89,7 +91,7 @@ release date as `YY.MM.DD` (e.g. `26.10.22`), with `-1`, `-2`… for further rel
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md).
+See [CONTRIBUTING.md](CONTRIBUTING.md). Work happens on `test` (or a branch off it), never on `main`. Changes reach `main` only through a pull request from `test`; the release commit and tag are made on `test` and go live when the pull request is merged.
 
 ## License
 
