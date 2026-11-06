@@ -41,13 +41,8 @@ groups:
         url: https://global.media.stux.group/icon.png
         description: Shared logos and images used across every Stux.Group site
 
-  # Brands with a status page of their own are linked under Elsewhere instead.
-  - name: Brands
-    description: Stux.Group brands without a status page of their own yet.
-    monitors:
-      - name: Stux.Cloud
-        url: https://stux.cloud/
-        description: The cloud and infrastructure brand behind Stuxedo
+  # Every brand now has a status page of its own, linked under Elsewhere. A brand without one would get a
+  # "Brands" group here (Stux.Cloud had one until status.stux.cloud opened on 6 November 2026).
 
   - name: Services & tools
     description: Stux.Group's own services, as listed on services.stux.group.
@@ -57,20 +52,20 @@ groups:
         description: The GitHup website and demo
 
   # In the Stux.Group website's brand order, then services with their own status pages.
-  # The servers and their certificate checks moved to Stuxedo Status on 9 October 2026 (with
+  # The servers and their certificate checks moved to Stuxedo Server Status (status.stuxedo.net) on 9 October 2026 (with
   # their history and slugs); the Stuxedo and Stux.Cloud region pages read them from there.
   - name: Elsewhere
     description: Brands and services checked on their own status pages.
     links:
       - name: Stuxedo Status
-        url: https://status.stuxedo.net
-        description: Stuxedo's servers (robo1, tiny1, kitt1, mixr1, down1), their certificates, and stuxedo.com
-      - name: Stuxedo Web Hosting Status
-        url: https://stuxedostatus.com
-        description: Stuxedo's web hosting platform
+        url: https://status.stuxedo.com/
+        description: Stuxedo's web hosting platform, and its servers (robo1, tiny1, kitt1, mixr1, down1) with their certificates
       - name: Stux.Dev Status
         url: https://status.stux.dev
         description: Stux.Dev, Stuxs.Tools, Downl.one, AutoScroll, Sm.lol and Stux.Dev Labs
+      - name: Stux.Cloud Status
+        url: https://status.stux.cloud/
+        description: Stux.Cloud's websites and pages
       - name: StuxAPIs Status
         url: https://status.stuxapis.net
         description: SeasonalOverlaysLibrary, Kittens, SecretGen and GithubStats
