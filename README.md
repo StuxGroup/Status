@@ -32,16 +32,15 @@ Updated by GitHup whenever the status page is rebuilt (hourly, and when a status
 ## What's monitored
 
 Every 5 minutes (when GitHub runs the schedule late, a run checks up to 4 times, 5 minutes apart, to fill the gap), GitHup checks each monitor in [`.githup.yml`](.githup.yml), shown on the page
-in four groups (the last is links only):
+in three groups (the last is links only):
 
 - **Stux.Group:** Stux.Group, Stux.Group Services and the Stux.Group media CDN
-- **Brands:** Stux.Group brands without a status page of their own yet (now just Stux.Cloud)
 - **Services & tools:** GitHup
 - **Elsewhere:** links to every brand's own status page, in the Stux.Group website's order
-  (Stuxedo, with its servers and their certificates, and Stuxedo's web hosting status; Stux.Dev;
-  StuxAPIs; Stux.Music; Stux.Digital; Stux.Design; Stux.Games), then Ream.st Status
+  (Stuxedo Server Status, with Stuxedo's servers and their certificates, and Stuxedo's web hosting status;
+  Stux.Dev; Stux.Cloud; StuxAPIs; Stux.Music; Stux.Digital; Stux.Design; Stux.Games), then Ream.st Status
 
-The servers and their certificate checks moved to [Stuxedo Status](https://status.stuxedo.net)
+The servers and their certificate checks moved to [Stuxedo Server Status](https://status.stuxedo.net)
 on 9 October 2026, with their history; the Stuxedo and Stux.Cloud region pages read them there.
 
 To add a service, add a monitor to the right group there (or a new group).

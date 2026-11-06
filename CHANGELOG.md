@@ -4,6 +4,21 @@ All notable changes to Stux.Group's status page (status.stux.group) are document
 v26.10.23 it uses [Date Versioning](https://datevers.ing) (`YY.MM.DD`, the UTC release date, with
 `-1`, `-2`… for later releases the same day); earlier releases used Semantic Versioning.
 
+## v26.11.06-1
+
+### Added
+
+- **Stux.Cloud Status** (status.stux.cloud) is linked under Elsewhere, after Stux.Dev Status.
+
+### Changed
+
+- The Stuxedo link is now **Stuxedo Server Status**, its new name: status.stuxedo.net covers Stuxedo's servers.
+
+### Removed
+
+- The Brands group and its Stux.Cloud monitor: Stux.Cloud has its own status page now, so every brand is linked
+  under Elsewhere instead of being checked here.
+
 ## v26.11.06
 
 ### Changed
