@@ -26,6 +26,11 @@ Updated by GitHup whenever the status page is rebuilt (hourly, and when a status
 | Stux.Group | [Stux.Group Services](https://services.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 237 ms |
 | Stux.Group | [Stux.Group Media CDN](https://global.media.stux.group/icon.png) | Up | 100.00% | 100.00% | 100.00% | 294 ms |
 | Services & tools | [GitHup](https://githup.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 204 ms |
+| Services & tools | [Date Versioning](https://datevers.ing/) | No data | n/a | n/a | n/a | n/a |
+| Templates & redirects | [Stux.Group Soonpage](https://soonpage.stux.group/) | No data | n/a | n/a | n/a | n/a |
+| Templates & redirects | [Stux.Group Maintenancepage](https://maintenancepage.stux.group/) | No data | n/a | n/a | n/a | n/a |
+| Templates & redirects | [Stux.Group Servicepage](https://servicepage.stux.group/) | No data | n/a | n/a | n/a | n/a |
+| Templates & redirects | [stuxgroup.github.io](https://stuxgroup.github.io/) | No data | n/a | n/a | n/a | n/a |
 <!-- githup:end -->
 
 ## What's monitored
