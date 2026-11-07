@@ -30,6 +30,12 @@ You need Python 3.11+ and nothing else.
   Preferences. Keep them accurate.
 - **Don't edit `data/` by hand.** It belongs to GitHup and the workflow.
 
+## Branches
+
+- Work on `test`, or on a feature branch off it. Never push to `main`
+- Changes reach `main` only through a pull request from `test` into `main`, which needs CI to pass and is reviewed and merged by Leo
+- Merging into `main` rebuilds and deploys status.stux.group; release commits and tags are made on `test` (`git push origin test --tags`) and go live when the pull request is merged
+
 ## Versioning and changelog
 
 - Status uses [Date Versioning](https://datevers.ing) (since v26.10.23; Semantic Versioning
@@ -45,7 +51,6 @@ You need Python 3.11+ and nothing else.
   valid Date Version (or is dated in the future, UTC), commit as `Release vX` and create the
   annotated `vX` tag. They don't push: push with `git push origin test vX`, then open a pull
   request from `test` into `main`.
-- Work happens on `test` (or a branch off it), never on `main`. Changes reach `main` only through a pull request from `test`; the release commit and tag are made on `test` and go live when the pull request is merged.
 
 ## Tests
 

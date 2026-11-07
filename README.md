@@ -31,10 +31,11 @@ Updated by GitHup whenever the status page is rebuilt (hourly, and when a status
 ## What's monitored
 
 Every 5 minutes (when GitHub runs the schedule late, a run checks up to 4 times, 5 minutes apart, to fill the gap), GitHup checks each monitor in [`.githup.yml`](.githup.yml), shown on the page
-in three groups (the last is links only):
+in four groups (the last is links only):
 
 - **Stux.Group:** Stux.Group, Stux.Group Services and the Stux.Group media CDN
-- **Services & tools:** GitHup
+- **Services & tools:** GitHup and Date Versioning
+- **Templates & redirects:** Stux.Group Soonpage, Maintenancepage and Servicepage, and stuxgroup.github.io
 - **Elsewhere:** links to every brand's own status page, in the Stux.Group website's order
   (Stuxedo Status, which leads to Stuxedo's web hosting status and its servers and their certificates;
   Stux.Dev; Stux.Cloud; StuxAPIs; Stux.Music; Stux.Digital; Stux.Design; Stux.Games), then Ream.st Status
@@ -88,6 +89,8 @@ at `stuxgroup.github.io`.
 This repo uses [Date Versioning](https://datevers.ing): each release is numbered by its UTC
 release date as `YY.MM.DD` (e.g. `26.10.22`), with `-1`, `-2`… for further releases that day. See
 [CHANGELOG.md](CHANGELOG.md) for what changed in each.
+
+Releases are committed and tagged on the `test` branch and go live when the pull request from `test` into `main` is merged; see [Branches](CONTRIBUTING.md#branches).
 
 ## Contributing
 
