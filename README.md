@@ -35,7 +35,7 @@ Updated by GitHup whenever the status page is rebuilt (hourly, and when a status
 
 ## What's monitored
 
-Every 5 minutes (when GitHub runs the schedule late, a run checks up to 4 times, 5 minutes apart, to fill the gap), GitHup checks each monitor in [`.githup.yml`](.githup.yml), shown on the page
+Regularly (the workflow asks GitHub for a run every 5 minutes, but GitHub runs schedules best-effort and often less often; when a run is late it checks up to 4 times, 5 minutes apart, to fill the gap), GitHup checks each monitor in [`.githup.yml`](.githup.yml), shown on the page
 in four groups (the last is links only):
 
 - **Stux.Group:** Stux.Group, Stux.Group Services and the Stux.Group media CDN
@@ -57,9 +57,10 @@ To announce planned maintenance, open an Issue yourself with the `githup` and `i
 
 ## How it works
 
-- **`.github/workflows/status.yml`** runs a GitHup `check` every 5 minutes (with `fill-gaps`, up to 4 checks when the schedule is late) and commits the
+- **`.github/workflows/status.yml`** runs a GitHup `check` on a 5-minute schedule that GitHub runs best-effort, often less often (with `fill-gaps`, up to 4 checks when the schedule is late) and commits the
   results to `data/` as `github-actions[bot]`. When a status changes, hourly, and on pushes, it
-  builds the GitHup status page into `_site` (with `site-dir`), and deploys it with `actions/deploy-pages`.
+  builds the GitHup status page into `_site` (with `site-dir`), and deploys it with `actions/deploy-pages`. The page shows
+  the real check rhythm ("checked about every … (last 24 h)").
 - **`legal:` in `.githup.yml`** (operator, company, contact, host, effective date) makes GitHup
   generate the **Boring Legal Stuff** hub at `/legal/` with its six sub-pages, a themed `404.html`, a
   `/sitemap/` page, `sitemap.xml` and `robots.txt` (the base URL is `site.url`). Nothing is hand-made: the
