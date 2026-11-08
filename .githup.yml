@@ -1,9 +1,9 @@
 # Stux.Group Status: https://status.stux.group
-# Checked every 5 minutes by .github/workflows/status.yml, using GitHup:
+# Asks GitHub for a check every 5 minutes (best-effort; GitHub often runs it less often) - .github/workflows/status.yml, using GitHup:
 # https://github.com/StuxGroup/GitHup
 site:
   name: Stux.Group Status
-  description: Live status of Stux.Group's websites and services, checked every 5 minutes.
+  description: Live status of Stux.Group's websites and services, checked regularly.
   # Its own badge icon (the Stux.Group mark with a heartbeat badge), as on services.stux.group.
   logo: https://services.stux.group/assets/img/services/stux-group-status.png
   favicon: https://services.stux.group/assets/img/services/stux-group-status.png
