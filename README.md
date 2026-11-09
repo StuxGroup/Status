@@ -22,15 +22,15 @@ Updated by GitHup whenever the status page is rebuilt (hourly, and when a status
 
 | Group | Monitor | Status | Uptime (24 h) | Uptime (7 d) | Uptime (30 d) | Response time (24 h) |
 | ----- | ------- | ------ | ------------- | ------------ | ------------- | -------------------- |
-| Stux.Group | [Stux.Group](https://stux.group/) | Up | 100.00% | 99.53% | 98.48% | 546 ms |
-| Stux.Group | [Stux.Group Services](https://services.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 225 ms |
+| Stux.Group | [Stux.Group](https://stux.group/) | Up | 100.00% | 99.52% | 98.48% | 548 ms |
+| Stux.Group | [Stux.Group Services](https://services.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 191 ms |
 | Stux.Group | [Stux.Group Media CDN](https://global.media.stux.group/icon.png) | Up | 100.00% | 100.00% | 100.00% | 321 ms |
-| Services & tools | [GitHup](https://githup.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 189 ms |
-| Services & tools | [Date Versioning](https://datevers.ing/) | Up | 100.00% | 100.00% | 100.00% | 192 ms |
-| Templates & redirects | [Stux.Group Soonpage](https://soonpage.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 264 ms |
-| Templates & redirects | [Stux.Group Maintenancepage](https://maintenancepage.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 215 ms |
-| Templates & redirects | [Stux.Group Servicepage](https://servicepage.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 240 ms |
-| Templates & redirects | [stuxgroup.github.io](https://stuxgroup.github.io/) | Up | 100.00% | 100.00% | 100.00% | 89 ms |
+| Services & tools | [GitHup](https://githup.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 182 ms |
+| Services & tools | [Date Versioning](https://datevers.ing/) | Up | 100.00% | 100.00% | 100.00% | 198 ms |
+| Templates & redirects | [Stux.Group Soonpage](https://soonpage.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 240 ms |
+| Templates & redirects | [Stux.Group Maintenancepage](https://maintenancepage.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 200 ms |
+| Templates & redirects | [Stux.Group Servicepage](https://servicepage.stux.group/) | Up | 100.00% | 100.00% | 100.00% | 221 ms |
+| Templates & redirects | [stuxgroup.github.io](https://stuxgroup.github.io/) | Up | 100.00% | 100.00% | 100.00% | 83 ms |
 <!-- githup:end -->
 
 ## What's monitored
