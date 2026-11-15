@@ -97,11 +97,11 @@ This repo uses [Date Versioning](https://datevers.ing): each release is numbered
 release date as `YY.MM.DD` (e.g. `26.10.22`), with `-1`, `-2`… for further releases that day. See
 [CHANGELOG.md](CHANGELOG.md) for what changed in each.
 
-Releases are committed and tagged on the `test` branch and go live when the pull request from `test` into `main` is merged; see [Branches](CONTRIBUTING.md#branches).
+Releases are committed and tagged on the `test` branch and go live through pull requests from `test` into `staging`, then from `staging` into `main`; see [Branches and going live](CONTRIBUTING.md#branches-and-going-live).
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md). Work happens on `test` (or a branch off it), never on `main`. Changes reach `main` only through a pull request from `test`; the release commit and tag are made on `test` and go live when the pull request is merged.
+See [CONTRIBUTING.md](CONTRIBUTING.md). Work happens on `test` (or a branch off it), never on `main`. Changes reach `main` only through a pull request from `staging`, and `staging` only through one from `test`; the release commit and tag are made on `test` and go live when the pull request is merged.
 
 ## License
 

@@ -4,6 +4,18 @@ All notable changes to Stux.Group's status page (status.stux.group) are document
 v26.10.23 it uses [Date Versioning](https://datevers.ing) (`YY.MM.DD`, the UTC release date, with
 `-1`, `-2`… for later releases the same day); earlier releases used Semantic Versioning.
 
+## v26.11.15-1
+
+### Changed
+
+- **Three-branch flow: `test` → `staging` → `main`.** Work and releases stay on `test`; `staging` only changes
+  through a pull request from `test`, and `main` (live) only through one from `staging`. `commit.sh` /
+  `commit.bat` refuse to run on `staging` or `main`, and print the push command and both `gh pr create` commands.
+  CI also runs on `staging` pushes and on pull requests into `staging`; deploys still come only from `main`.
+  CONTRIBUTING's "Branches and going live" and the README describe it
+- The status workflow's `*/5` schedule comment says GitHub runs it best-effort and often less often, instead of
+  "a little late". The schedule itself is unchanged
+
 ## v26.11.15
 
 ### Added
