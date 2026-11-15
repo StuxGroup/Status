@@ -78,6 +78,7 @@ To announce planned maintenance, open an Issue yourself with the `githup` and `i
 ```bash
 ./dev-server.sh                 # or dev-server.bat on Windows; add a port as the last argument
 ./dev-server.sh --no-dev-mode   # production rendering
+./dev-server.sh --lan           # also open it from a phone on your network (prints the addresses)
 ```
 
 `dev-server` generates 90 days of example data, builds the status page into `.dev/public` with

@@ -14,8 +14,12 @@ Issue. Bugs or ideas for the status page software belong in
 You need Python 3.11+ and nothing else.
 
 ```bash
-./dev-server.sh [--no-dev-mode] [port]   # or dev-server.bat on Windows
+./dev-server.sh [--no-dev-mode] [--lan] [port]   # or dev-server.bat on Windows
 ```
+
+`--lan` also serves it to phones and other devices on your local network: it listens on
+`0.0.0.0` instead of `127.0.0.1` and prints the addresses to open (usually the `192.168.x.x` one;
+allow Python through the firewall if asked).
 
 ## Project conventions
 
