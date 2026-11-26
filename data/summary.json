@@ -1,7 +1,7 @@
 {
  "version": 1,
  "generator": "GitHup",
- "updated": 1795686141,
+ "updated": 1795691120,
  "name": "Stux.Group Status",
  "status": "up",
  "monitors": [
@@ -11,8 +11,8 @@
    "url": "https://stux.group/",
    "status": "up",
    "code": 200,
-   "ms": 531,
-   "checked_at": 1795686141,
+   "ms": 757,
+   "checked_at": 1795691119,
    "last_change": {
     "at": 1793633955,
     "from": "down",
@@ -21,22 +21,22 @@
    "uptime": {
     "24h": 100.0,
     "7d": 100.0,
-    "30d": 98.139,
-    "90d": 99.053,
-    "all": 99.053
+    "30d": 98.128,
+    "90d": 99.054,
+    "all": 99.054
    },
    "avg_ms": {
-    "24h": 720,
-    "7d": 881,
-    "30d": 1735,
+    "24h": 722,
+    "7d": 857,
+    "30d": 1732,
     "90d": 1157,
     "all": 1157
    },
    "totals": {
-    "checks": 1902,
-    "available": 1884,
-    "ms_sum": 2179250,
-    "ms_n": 1884,
+    "checks": 1903,
+    "available": 1885,
+    "ms_sum": 2180007,
+    "ms_n": 1885,
     "first": 1790721281
    },
    "incident": null
@@ -47,8 +47,8 @@
    "url": "https://services.stux.group/",
    "status": "up",
    "code": 200,
-   "ms": 199,
-   "checked_at": 1795686141,
+   "ms": 284,
+   "checked_at": 1795691119,
    "last_change": {
     "at": 1790721281,
     "from": null,
@@ -62,17 +62,17 @@
     "all": 100.0
    },
    "avg_ms": {
-    "24h": 218,
-    "7d": 157,
+    "24h": 222,
+    "7d": 158,
     "30d": 198,
     "90d": 244,
     "all": 244
    },
    "totals": {
-    "checks": 1902,
-    "available": 1902,
-    "ms_sum": 463930,
-    "ms_n": 1902,
+    "checks": 1903,
+    "available": 1903,
+    "ms_sum": 464214,
+    "ms_n": 1903,
     "first": 1790721281
    },
    "incident": null
@@ -83,8 +83,8 @@
    "url": "https://global.media.stux.group/icon.png",
    "status": "up",
    "code": 200,
-   "ms": 111,
-   "checked_at": 1795686141,
+   "ms": 579,
+   "checked_at": 1795691119,
    "last_change": {
     "at": 1790721281,
     "from": null,
@@ -98,17 +98,17 @@
     "all": 100.0
    },
    "avg_ms": {
-    "24h": 283,
-    "7d": 263,
+    "24h": 297,
+    "7d": 265,
     "30d": 314,
     "90d": 396,
     "all": 396
    },
    "totals": {
-    "checks": 1902,
-    "available": 1902,
-    "ms_sum": 753924,
-    "ms_n": 1902,
+    "checks": 1903,
+    "available": 1903,
+    "ms_sum": 754503,
+    "ms_n": 1903,
     "first": 1790721281
    },
    "incident": null
@@ -119,8 +119,8 @@
    "url": "https://githup.stux.group/",
    "status": "up",
    "code": 200,
-   "ms": 247,
-   "checked_at": 1795686141,
+   "ms": 131,
+   "checked_at": 1795691119,
    "last_change": {
     "at": 1790721281,
     "from": null,
@@ -134,17 +134,17 @@
     "all": 100.0
    },
    "avg_ms": {
-    "24h": 197,
-    "7d": 169,
+    "24h": 194,
+    "7d": 168,
     "30d": 201,
     "90d": 241,
     "all": 241
    },
    "totals": {
-    "checks": 1902,
-    "available": 1902,
-    "ms_sum": 459332,
-    "ms_n": 1902,
+    "checks": 1903,
+    "available": 1903,
+    "ms_sum": 459463,
+    "ms_n": 1903,
     "first": 1790721281
    },
    "incident": null
@@ -155,8 +155,8 @@
    "url": "https://datevers.ing/",
    "status": "up",
    "code": 200,
-   "ms": 130,
-   "checked_at": 1795686141,
+   "ms": 230,
+   "checked_at": 1795691119,
    "last_change": {
     "at": 1794059852,
     "from": null,
@@ -170,17 +170,17 @@
     "all": 100.0
    },
    "avg_ms": {
-    "24h": 188,
+    "24h": 190,
     "7d": 176,
     "30d": 183,
     "90d": 183,
     "all": 183
    },
    "totals": {
-    "checks": 504,
-    "available": 504,
-    "ms_sum": 92201,
-    "ms_n": 504,
+    "checks": 505,
+    "available": 505,
+    "ms_sum": 92431,
+    "ms_n": 505,
     "first": 1794059852
    },
    "incident": null
@@ -191,8 +191,8 @@
    "url": "https://soonpage.stux.group/",
    "status": "up",
    "code": 200,
-   "ms": 212,
-   "checked_at": 1795686141,
+   "ms": 154,
+   "checked_at": 1795691119,
    "last_change": {
     "at": 1794059852,
     "from": null,
@@ -206,17 +206,17 @@
     "all": 100.0
    },
    "avg_ms": {
-    "24h": 201,
-    "7d": 184,
+    "24h": 198,
+    "7d": 183,
     "30d": 197,
     "90d": 197,
     "all": 197
    },
    "totals": {
-    "checks": 504,
-    "available": 504,
-    "ms_sum": 99087,
-    "ms_n": 504,
+    "checks": 505,
+    "available": 505,
+    "ms_sum": 99241,
+    "ms_n": 505,
     "first": 1794059852
    },
    "incident": null
@@ -227,8 +227,8 @@
    "url": "https://maintenancepage.stux.group/",
    "status": "up",
    "code": 200,
-   "ms": 78,
-   "checked_at": 1795686141,
+   "ms": 132,
+   "checked_at": 1795691119,
    "last_change": {
     "at": 1794059852,
     "from": null,
@@ -242,17 +242,17 @@
     "all": 100.0
    },
    "avg_ms": {
-    "24h": 157,
-    "7d": 170,
+    "24h": 156,
+    "7d": 169,
     "30d": 177,
     "90d": 177,
     "all": 177
    },
    "totals": {
-    "checks": 504,
-    "available": 504,
-    "ms_sum": 89256,
-    "ms_n": 504,
+    "checks": 505,
+    "available": 505,
+    "ms_sum": 89388,
+    "ms_n": 505,
     "first": 1794059852
    },
    "incident": null
@@ -263,8 +263,8 @@
    "url": "https://servicepage.stux.group/",
    "status": "up",
    "code": 200,
-   "ms": 95,
-   "checked_at": 1795686141,
+   "ms": 155,
+   "checked_at": 1795691119,
    "last_change": {
     "at": 1794059852,
     "from": null,
@@ -278,17 +278,17 @@
     "all": 100.0
    },
    "avg_ms": {
-    "24h": 187,
-    "7d": 185,
+    "24h": 185,
+    "7d": 184,
     "30d": 184,
     "90d": 184,
     "all": 184
    },
    "totals": {
-    "checks": 504,
-    "available": 504,
-    "ms_sum": 92743,
-    "ms_n": 504,
+    "checks": 505,
+    "available": 505,
+    "ms_sum": 92898,
+    "ms_n": 505,
     "first": 1794059852
    },
    "incident": null
@@ -299,8 +299,8 @@
    "url": "https://stuxgroup.github.io/",
    "status": "up",
    "code": 200,
-   "ms": 34,
-   "checked_at": 1795686141,
+   "ms": 59,
+   "checked_at": 1795691119,
    "last_change": {
     "at": 1794059852,
     "from": null,
@@ -314,17 +314,17 @@
     "all": 100.0
    },
    "avg_ms": {
-    "24h": 78,
+    "24h": 77,
     "7d": 84,
     "30d": 80,
     "90d": 80,
     "all": 80
    },
    "totals": {
-    "checks": 504,
-    "available": 504,
-    "ms_sum": 40357,
-    "ms_n": 504,
+    "checks": 505,
+    "available": 505,
+    "ms_sum": 40416,
+    "ms_n": 505,
     "first": 1794059852
    },
    "incident": null
@@ -332,7 +332,7 @@
  ],
  "cadence": {
   "window": 86400,
-  "checks": 20,
-  "every": 3449
+  "checks": 21,
+  "every": 3525
  }
 }
